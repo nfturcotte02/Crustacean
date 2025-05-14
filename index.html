@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Crustacean Devastation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery-ui.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="loadingscreen">
+      <img id="loadingimg" src="img/LoadingScreen.png">
+      <img id="loadingiso" src="img/Rollingiso.png">
+    </div>
+    <div class="wrapper">
+      <section class="panel1">  <!-- Panel 1 elements, makes the floating can scene-->     
+        <img id="background1" src="img/parlaxingbackground.png">
+        <img id="background2" src="img/backperspectiveshift.png">
+        <img id="plank" src="img/Plankofwood.png">
+        <img id="tire" src="img/Tire.png">
+        <img id="trashisle" src="img/TrashIsland.png">
+        <img id="crumpledcan" src="img/CrumpledCan.png">
+        <img id="cup" src="img/StCup.png">
+        <img id="wateroverlay1" src="img/WaterCan.png">
+        <div id="titletext">
+          <h1 id="Title">CRUSTACEAN</h1>
+          <h1 id="Title">DEVASTATION</h1>
+        </div>
+        <div id="sideborder1"></div>
+        <div id="topborder1"></div>
+        <div id="inbetween1-2"></div>
+        <div id="bottomborder1"></div>
+        <div id="rightborder1"></div>
+        <div id="start1"></div>
+      </section>
+      <section class="panel2"> <!-- Panel 2 elements makes the scene of the can floating into the island made of trash, uses the crumpledcan and trashisle elements from panel 1-->
+        <div id="start2"></div>
+        <div id="leftborder2"></div>
+        <div id="rightborder2"></div>
+        <div id="topborder2"></div>
+        <div id="bottomborder2"></div>
+        <div id="titlecardshadow"></div>
+        <div id="titlecardbox"></div>
+        <h1 id="tgarb1">The Great Pacific Garbage Patch</h1>
+        <h1 id="tgarb2">around 1,000 miles from the coast of California</h1>
+      </section>
+      <section class="panel3"> <!-- Panel 3 elements make up the bottle decaying scene-->
+        <div id="start3"></div>
+        <div id="start4"></div>
+        <div id="start5"></div>
+        <div id="ocean"></div>
+        <div id="bottlebase">
+          <div id="bsky"></div>
+          <img id="sun" src="img/sun.png">
+          <img id="moon" src="img/Moon.png">
+          <div id="bwater"></div>
+          <div id="bwave"></div>
+        </div>
+        <img id="seafloor" src="img/seafloor.png">
+        <div id="bottleshards">
+          <img id="shard1" src="img/shard1.png">
+          <img id="shard2" src="img/shard2.png">
+          <img id="shard3" src="img/shard3.png">
+          <img id="shard4" src="img/shard4.png">
+          <img id="shard5" src="img/shard5.png">
+          <img id="shard6" src="img/shard6.png">
+          <img id="shard7" src="img/shard7.png">
+          <img id="shard8" src="img/shard8.png">
+          <img id="shard9" src="img/shard9.png">
+          <img id="shard10" src="img/shard10.png">
+          <img id="shard11" src="img/shard11.png">
+          <img id="shard12" src="img/shard12.png">
+          <img id="shard13" src="img/shard13.png">
+          <img id="shard14" src="img/shard14.png">
+          <img id="shard15" src="img/shard15.png">
+          <img id="shard16" src="img/shard16.png">
+          <img id="shard17" src="img/shard17.png">
+          <img id="shard18" src="img/shard18.png">
+          <img id="shard19" src="img/shard19.png">
+          <img id="shard20" src="img/shard20.png">
+        </div>
+        <img id="bottle" src="img/Bottle.png">
+        <div id="bwaveoverlay"></div>
+        <div id="titlecardshadow2"></div>
+        <div id="titlecardbox2"></div>
+        <div id="leftborder3"></div>
+        <h1 id="tbottle">After years of floating, the garbage</h1>
+        <h1 id="tbottle2">which makes up this patch begins to decay</h1>
+        <h1 id="tbottle3">becoming a breeding ground for bacteria</h1>
+        <img id="zoom" src="img/Microscope.png">
+        <img id="microl" src="img/microbacterialeft.png">
+        <img id="micror" src="img/ microbacteriaright.png">
+        <div id="rightborder3"></div>
+        <div id="topborder3"></div>
+      </section>
+      <section class="panel4"> <!-- panel 4 elements make up the shards falling into the deep ocean, uses shards 16-20 from frame 3-->
+        <div id="start6"></div>
+        <div id="titlecardshadow3"></div>
+        <div id="titlecardbox3"></div>
+        <div id="titlecardshadow4"></div>
+        <div id="titlecardbox4"></div>
+        <div id="titlecardshadow5"></div>
+        <div id="titlecardbox5"></div>
+        <h1 id="fallingtext"> But what remains...</h1>
+        <h1 id="fallingtext2"> is never truly...</h1>
+        <h1 id="fallingtext3"> destroyed</h1>
+      </section>
+      <section class="panel4half"> <!-- labeled 4 and half for the fact that it reuses alot of elements from panel 4, elements make up the scene where the isopod gets close to the camera and "eats" the shards-->
+        <div id="start7"></div>
+        <img id="frontisopod" src="img/FrontFacingIsopod.png">
+        <img id="frontisopodoutstretch" src="img/Isopodreachingforsnack.png">
+        <img id="frontisopodconsume" src="img/Isopodconsumingsnack.png">
+        <div id="titlecardshadow6"></div>
+        <div id="titlecardbox6"></div>
+        <h1 id="feasttext">Some might even confuse these remains as a feast.</h1>
+        <h1 id="feasttext2">The bacteria making them all the more appetizing</h1>
+      </section>
+      <section class="panel5"> <!-- panel 5 elements make up the scene where the isopod heads to the surface while growing in size -->
+        <div id="start8"></div>
+        <div id="ocean2"></div>
+        <img id="backisopod" src="img/BackofIsopod.png">
+        <img id="bottomtrash" src="img/trashbottom.png">
+        <div id="leftborder4"></div>
+        <div id="rightborder4"></div>
+        <div id="titlecardshadow7"></div>
+        <div id="titlecardbox7"></div>
+        <h1 id="upwardtext">Does the surface have more meals to offer?</h1>
+        <img id="zoomcells" src="img/Microscope.png">
+        <img id="cell" src="img/Cell.png">
+        <img id="cell2" src="img/Cell.png">
+        <img id="cell3" src="img/Cell.png">
+        <div id="titlecardshadow8"></div>
+        <div id="titlecardbox8"></div>
+        <h1 id="upwardtext2">Foriegn invaders certainly have</h1>
+        <h1 id="upwardtext3">a unique effect on the body.</h1>
+        <div id="start9"></div>
+      </section>
+      <section class="panel6"> <!-- panel6 elements make up the scene where the isopod emerges from the water and spots the barge carrying trash-->
+        <div id="start10"></div>
+        <div id="chasesky"></div>
+        <img id="emergesky" src="img/Emergesky.png">
+        <div id="emergewater"></div>
+        <img id="emergetrash4" src="img/emergetrash.png">
+        <img id="emergetrash5" src="img/emergetrash.png">
+        <img id="emergetrash6" src="img/emergetrash.png">
+        <img id="emergetrash7" src="img/emergetrash.png">
+        <img id="emergeisopodwtrash" src="img/EmergingIsopod.png">
+        <img id="emergeisopodwotrash" src="img/emergeisopodwotrash.png">
+        <img id="emergetrash2" src="img/emergetrash.png">
+        <img id="emergetrash3" src="img/emergetrash.png">
+        <img id="emergetrash" src="img/emergetrash.png">
+        <h1 id="foghorn">WAAAAH</h1>
+        <h1 id="foghorn2">WAAAAAAH</h1>
+        <h1 id="foghorn3">WAAAAH</h1>
+        <div id="titlecardshadow9"></div>
+        <div id="titlecardbox9"></div>
+        <h1 id="initalboattext"> What was that? More food perhaps?</h1>
+        <img id="thehills" src="img/Thehills.png">
+        <img id="cityscape" src="img/CityScape.png">
+        <img id="docks" src="img/Dock.png">
+        <img id="towboatside" src="img/TowBoatside.png">
+        <img id="cargo" src="img/CargoFrontEdge.png">
+        <img id="cargo2" src="img/CargoMid.png">
+        <img id="cargo3" src="img/CargoMid2.png">
+        <img id="cargo4" src="img/CargoEdge.png">
+        <img id="towboatcargo" src="img/Cargo.png">
+        <img id="isopodside" src="img/IsopodSide.png">
+        <div id="boatoceanoverlay"></div>
+        <img id="goldengate" src="img/GoldenGateBridge.png">
+        <div id="leftborder5"></div>
+        <div id="rightborder5"></div>
+        <div id="topborder5"></div>
+        <div id="inbetween5-6"></div>
+        <div id="topborder6"></div>
+        <div id="start11"></div>
+      </section>
+      <section class="panel7"> <!-- panel 7 makes up the scene where the isopod pursues the barge back to San Francisco-->
+        <div id="start12"></div>
+        <div id="start13"></div>
+        <div id="start14"></div>
+        <div id="titlecardshadow10"></div>
+        <div id="titlecardbox10"></div>
+        <h1 id="traveltext">Where is it going?</h1>
+        <div id="bottomborder5"></div>
+      </section>
+      <section class="panel8"> <!-- panel 8 makes up the scene where the isopod emerges from behind the boat and causes a giant wave to submerge the screen-->
+        <div id="start15"></div>
+        <div id="start16"></div>
+        <div id="start17"></div>
+        <div id="inbetween7-8"></div>
+        <div id="closeupsky"></div>
+        <div id="closeupwater"></div>
+        <img id="splash" src="img/Splash.png">
+        <img id="hunchedisopod" src="img/MenacingIsopod.png">
+        <img id="frontfacingwave" src="img/frontfacingwave.png">
+        <img id="frontviewboat" src="img/FrontViewBoat.png">
+        <img id="dockbackdrop" src="img/onthedocks.png">
+        <img id="man1" src="img/KnockedOverMan.png">
+        <img id="man2" src="img/RunningMan.png">
+        <img id="sidewave" src="img/sidewave.png">
+        <div id="titlecardshadow11"></div>
+        <div id="titlecardbox11"></div>
+        <h1 id="wavetext">Out to sea they go,like trash</h1>
+        <h1 id="wavetext2">they are left to drift aimlessly</h1>
+        <div id="bottomborder6"></div>
+        <div id="topborder7"></div>
+        <div id="leftborder7"></div>
+        <div id="rightborder7"></div>
+      </section>
+      <section class="panel9"> <!-- panel 9 makes up two scenes, one where the isopod curls up into a ball and rolls through a dock and another where it rolls through a city street and destroyes two buildings-->
+        <div id="start18"></div>
+        <img id="prospectivecrates" src="img/PCrates.png">
+        <div id="citysky"></div>
+        <img id="building" src="img/AdditionalBuilding.png">
+        <img id="building2" src="img/AnotherAdditionalBuilding.png">
+        <img id="bbuilding1" src="img/BreakableBuilding1.png">
+        <img id="bbuilding2" src="img/BreakableBuilding2.png">
+        <img id="streetview" src="img/StreetView.png">
+        <img id="backball" src="img/BackIsopodBall.png">
+        <img id="frontball" src="img/Frontisopodball.png">
+        <img id="smallsmokecloud" src="img/Smallersmokecloud.png">
+        <div id="titlecardshadow12"></div>
+        <div id="titlecardbox12"></div>
+        <h1 id="curltext">The noise and choas frightens the confused animal.</h1>
+        <h1 id="curltext2">In an act of self-defense it concels itself.</h1>
+        <div id="start19"></div>
+      </section>
+      <section class ="panel10"> <!-- panel 10 makes up the scene where the isopod crawls across the glass of a skyscraper-->
+        <div id="start20"></div>
+        <img id="insidebackground" src="img/InsideBackdrop.png">
+        <img id="bottomisopod" src="img/BottomIsopod.png">
+        <div id="glasspane"></div>
+        <img id="windowbars" src="img/WindowBars.png">
+        <img id="insideskyscraper" src="img/InsideFurnishings.png">
+        <img id="smokecloud" src="img/SmokeCloud.png">
+        <div id="titlecardshadow13"></div>
+        <div id="titlecardbox13"></div>
+        <h1 id="tagline">It all starts here: San Francisco</h1>
+        <div id="bottomborder7"></div>
+        <div id="topborder8"></div>
+        <div id="leftborder8"></div>
+        <div id="rightborder8"></div>
+      </section>
+      <section class ="panel11"> <!-- panel 11 makes up the scene where the isopod is hanging from Salesforce tower and helicopter come and shoot at it-->
+        <div id="start21"></div>
+        <div id="start22"></div>
+        <img id="salesforce" src="img/SalesforceTower.png">
+        <img id="rocket" src="img/Rocket.png">
+        <img id="rocket2" src="img/Rocket.png">
+        <img id="rocketsmoke" src="img/Smallersmokecloud.png">
+        <img id="rocketsmoke2" src="img/Smallersmokecloud.png">
+        <img id="chopper" src="img/Chopper.png">
+        <img id="chopper2" src="img/Chopper.png">
+        <div id="titlecardshadow14"></div>
+        <div id="titlecardbox14"></div>
+        <div id="titlecardshadow15"></div>
+        <div id="titlecardbox15"></div>
+        <h1 id="choppertext">Shoot first, and ask questions later.</h1>
+        <h1 id="choppertext2">How humans typically act when faced </h1>
+        <h1 id="choppertext3">with something which provokes fear.</h1>
+        <h1 id="choppertext4">The bullets do no inherent damage,</h1>
+        <h1 id="choppertext5">but they certainly don't help one keep steady</h1>
+        <div id="bottomborder8"></div>
+        <div id="topborder9"></div>
+        <div id="leftborder9"></div>
+        <div id="rightborder9"></div>
+      </section>
+      <section class="panel12"> <!-- panel 12 makes up the scene where the isopod is impaled on the Transamerican Pyramid-->
+        <div id="start23"></div>
+        <div id="start24"></div>
+        <img id="rooftops" src="img/RoofTops.png">
+        <img id="backshell" src="img/backshell.png">
+        <img id="transamerican" src="img/Transamericanpyramid.png">
+        <img id="spearedisopod" src="img/FlippedIsopod.png">
+        <img id="trashfalls" src="img/trashfalls.png">
+        <div id="titlecardshadow16"></div>
+        <div id="titlecardbox16"></div>
+        <h1 id="speartext">The Transamerican Pyramid serves</h1>
+        <h1 id="speartext2">as the world's largest trash spear</h1>
+        <h1 id="speartext3">Poor creature. It never harbored any </h1>
+        <h1 id="speartext4">hate, it was just a confused animal.</h1>
+        <div id="bottomborder9"></div>
+        <div id="topborder10"></div>
+        <div id="leftborder10"></div>
+        <div id="rightborder10"></div>
+      </section>
+      <section class="panel13"> <!-- panel 13 makes up the scene where trash falls from the sky into a slow fade to black-->
+        <div id="finalsky"></div>
+        <img id="finalbuilding" src="img/AnotherAdditionalBuilding.png">
+        <img id="finalbottle" src="img/Bottle.png">
+        <div id="bottomborder10"></div>
+        <div id="topborder11"></div>
+        <div id="leftborder11"></div>
+        <div id="rightborder11"></div>
+        <div id="finalfade"></div>
+        <div id="start25"></div>
+        <h1 id="finaltext"> An estimated 33 billion pounds of waste enter the ocean each year.</h1>
+        <h1 id="finaltext2"> Over 1 million marine animals are killed by this waste.</h1>
+        <h1 id="finaltext3"> What will you do to protect our oceans?</h1>
+        <div id="start26"></div>
+      </section>
+    </div>
+
+
+
+
+  <script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  let timeline1 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start1",     
+      start: "top 90%",           
+      end: "bottom 10%",          
+      scrub: true,               
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#FF0000",
+      ///endColor: "#FF0000",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline1.to("#Title", {opacity: 0})
+.to("#background1", {x:-3500}, 0)
+.to("#background2", {x:-3500}, 0)
+.to("#wateroverlay1", {x:-3500}, 0)
+.to("#plank", {x:-3500}, 0)
+.to("#tire", {x:-3500}, 0)
+.to("#cup", {x:-3525}, 0)
+.to("#sideborder1", {x:-3500}, 0)
+.to("#rightborder1", {x:-3500}, 0)
+.to("#bottomborder1", {x:-3500}, 0)
+.to("#topborder1", {x:-3500}, 0)
+.to("#leftborder2", {x:-3500}, 0)
+.to("#rightborder2", {x:-3500}, 0)
+.to("#topborder2", {x:-3500}, 0)
+.to("#bottomborder2", {x:-3500}, 0)
+.to("#inbetween1-2", {x:-3500}, 0)
+.to("#trashisle", {x:-3500}, 0)
+
+
+let timeline2 = gsap.timeline({        
+      scrollTrigger: {
+      trigger: "#start2",     
+      start: "top 100%",          
+      end: "bottom 0%",          
+      scrub: true,               
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#00ff00",
+      ///endColor: "#00ff00",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline2.to("#crumpledcan", {x:-500, scale:2})
+.to("#background1", {x:-4605}, 0)
+.to("#background2", {x:-4605}, 0)
+.to("#wateroverlay1", {x:-4600}, 0)
+.to("#plank", {x:-5000}, 0)
+.to("#tire", {x:-5000}, 0)
+.to("#cup", {x:-5025}, 0)
+.to("#sideborder1", {x:-5000}, 0)
+.to("#rightborder1", {x:-4605}, 0)
+.to("#bottomborder1", {x:-4605}, 0)
+.to("#topborder1", {x:-4605}, 0)
+.to("#leftborder2", {x:-4605}, 0)
+.to("#rightborder2", {x:-4605}, 0)
+.to("#topborder2", {x:-4605}, 0)
+.to("#bottomborder2", {x:-4605}, 0)
+.to("#inbetween1-2", {x:-4605}, 0)
+.to("#trashisle", {x:-4605}, 0)
+.to("#crumpledcan", {scale: .05, x: -400, y: -75})
+.to("#trashisle", {scale: .9, y: 100}, .5)
+.to("#tgarb1", {opacity: 1})
+.to("#tgarb2", {opacity: 1}, 1)
+.to("#titlecardbox", {opacity: 1}, 1)
+.to("#titlecardshadow", {opacity: 1}, 1)
+
+let timeline3 = gsap.timeline({        
+      scrollTrigger: {
+      trigger: "#start3",     
+      start: "top 95%",          
+      end: "bottom 5%",          
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#00ff00",
+      ///endColor: "#00ff00",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline3.to("#crumpledcan", {x:"500vw", y:"-100vh"})
+.to("#background2", {x:"100vw", y:"-100vh"}, 0)
+.to("#leftborder2", {x:"100vw", y:"-100vh"}, 0)
+.to("#rightborder2", {x:"100vw", y:"-100vh"}, 0)
+.to("#topborder2", {x:"100vw", y:"-100vh"}, 0)
+.to("#bottomborder2", {x:"100vw", y:"-100vh"}, 0)
+.to("#trashisle", {x:"500vw", y:"-100vh"}, 0)
+.to("#tgarb1", {x:"500vw", y:"-100vh"}, 0)
+.to("#tgarb2", {x:"500vw", y:"-100vh"}, 0)
+.to("#titlecardbox", {x:"500vw", y:"-100vh"}, 0)
+.to("#titlecardshadow", {x:"500vw", y:"-100vh"}, 0)
+.to("#topborder3", {x:"100vw", y:"-100vh"}, 0)
+.to("#leftborder3", {x:"100vw", y:"-100vh"}, 0)
+.to("#rightborder3", {x:"100vw", y:"-100vh"}, 0)
+.to("#ocean", {x:"100vw", y:"-100vh"}, 0)
+.to("#bottle", {x:"100vw", y:"-100vh"}, 0)
+.to("#bsky", {x:"100vw", y:"-100vh"}, 0)
+.to("#bwater", {x:"100vw", y:"-100vh"}, 0)
+.to("#bwave", {x:"100vw", y:"-100vh"}, 0)
+.to("#bwaveoverlay", {x:"100vw", y:"-100vh"}, 0)
+.to("#sun", {x:"100vw", y:"-100vh"}, 0)
+.to("#moon", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard1", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard2", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard3", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard4", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard5", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard6", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard7", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard8", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard9", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard10", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard11", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard12", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard13", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard14", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard15", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard16", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard17", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard18", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard19", {x:"100vw", y:"-100vh"}, 0)
+.to("#shard20", {x:"100vw", y:"-100vh"}, 0)
+.to("#microl", {x:"100vw", y:"-100vh"}, 0)
+.to("#micror", {x:"100vw", y:"-100vh"}, 0)
+.to("#zoom", {x:"100vw", y:"-100vh"}, 0)
+
+
+let timeline4 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start4",     
+      start: "top 93%",           
+      end: "bottom 1%",         
+      scrub: true,               
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#808080",
+      ///endColor: "#808080",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline4.to("#sun", { x:"60vw", y:"-130vh", ease:"power1.out"})
+.to("#bottle", {y:"-102vh"}, 0)
+.to("#moon", {x:"60vw", y:"-80vh", ease:"power1.out"}, 0)
+.to("#sun", { x:"20vw", y:"-95vh", ease:"power1.out"})
+.to("#bottle", {y:"-97vh"}, .5)
+.to("#moon", {x:"100vw", y:"-100vh", ease:"power1.out"}, .5)
+.to("#sun", { x:"60vw", y:"-70vh", ease:"power1.out"})
+.to("#bsky", { backgroundColor: "#131862" }, 1)
+.to("#bottle", {y:"-100vh"},1)
+.to("#moon", { x:"60vw", y:"-130vh", ease:"power1.out"},1)
+.to("#sun", {x:"100vw", y:"-90vh",  ease:"power1.out"})
+.to("#bottle", {y:"-96vh"}, 1.5)
+.to("#moon", { x:"20vw", y:"-95vh", ease:"power1.out"}, 1.5)
+.to("#sun", { x:"60vw", y:"-130vh", ease:"power1.out"})
+.to("#bsky", { backgroundColor: "#aaefff" }, 2)
+.to("#bottle", {y:"-98vh"}, 2)
+.to("#moon", {x:"60vw", y:"-80vh", ease:"power1.out"}, 2)
+.to("#tbottle", {opacity: 1}, 2)
+.to("#tbottle2", {opacity: 1}, 2)
+.to("#tbottle3", {opacity: 1}, 2)
+.to("#microl", {opacity: 1}, 2)
+.to("#micror", {opacity: 1}, 2)
+.to("#zoom", {opacity: 1}, 2)
+.to("#titlecardbox2", {opacity: 1}, 2)
+.to("#titlecardshadow2", {opacity: 1}, 2)
+.to("#sun", { x:"20vw", y:"-95vh", ease:"power1.out"})
+.to("#bottle", {y:"-101vh"}, 2.5)
+.to("#moon", {x:"100vw", y:"-100vh", ease:"power1.out"}, 2.5)
+.to("#sun", { x:"60vw", y:"-70vh", ease:"power1.out"})
+.to("#bsky", { backgroundColor: "#131862" }, 3)
+.to("#bottle", {y:"-97vh"},3)
+.to("#moon", { x:"60vw", y:"-130vh", ease:"power1.out"},3)
+.to("#sun", {x:"100vw", y:"-90vh",  ease:"power1.out"})
+.to("#bottle", {y:"-102vh"}, 3.5)
+.to("#moon", { x:"20vw", y:"-95vh", ease:"power1.out"}, 3.5)
+.to("#sun", { x:"60vw", y:"-130vh", ease:"power1.out"})
+.to("#bsky", { backgroundColor: "#aaefff" }, 4)
+.to("#bottle", {y:"-99vh"}, 4)
+.to("#moon", {x:"60vw", y:"-80vh", ease:"power1.out"}, 4)
+
+let timeline5 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start5",     
+      start: "top 98%",           
+      end: "bottom 4%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#800080",
+      ///endColor: "#800080",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline5.to("#sun", { x:"20vw", y:"-95vh", ease:"power1.out"})
+.to("#bottle", {y:"-97vh"}, 0)
+.to("#moon", {x:"100vw", y:"-100vh", ease:"power1.out"}, 0)
+.to("#shard1", {y:"-70vh", opacity: 1}, 0)
+.to("#shard5", {y:"-70vh", opacity: 1}, 0)
+.to("#shard10", {y:"-70vh", opacity: 1}, 0)
+.to("#shard15", {y:"-70vh", opacity: 1}, 0)
+.to("#sun", { x:"60vw", y:"-70vh", ease:"power1.out"})
+.to("#bsky", { backgroundColor: "#131862" }, .5)
+.to("#bottle", {y:"-100vh"},.5)
+.to("#moon", { x:"60vw", y:"-130vh", ease:"power1.out"},.5)
+.to("#shard2", {y:"-70vh", opacity: 1}, .5)
+.to("#shard4", {y:"-70vh", opacity: 1}, .5)
+.to("#shard7", {y:"-70vh", opacity: 1}, .5)
+.to("#shard1", {y:"-30vh", opacity: 1}, .5)
+.to("#shard5", {y:"-30vh", opacity: 1}, .5)
+.to("#shard10", {y:"-30vh", opacity: 1}, .5)
+.to("#shard15", {y:"-30vh", opacity: 1}, .5)
+.to("#sun", {x:"100vw", y:"-90vh",  ease:"power1.out"})
+.to("#bottle", {y:"-96vh"}, 1)
+.to("#moon", { x:"20vw", y:"-95vh", ease:"power1.out"}, 1)
+.to("#shard3", {y:"-70vh", opacity: 1}, 1)
+.to("#shard9", {y:"-70vh", opacity: 1}, 1)
+.to("#shard12", {y:"-70vh", opacity: 1}, 1)
+.to("#shard6", {y:"-70vh", opacity: 1}, 1)
+.to("#shard2", {y:"-30vh", opacity: 1}, 1)
+.to("#shard4", {y:"-30vh", opacity: 1}, 1)
+.to("#shard7", {y:"-30vh", opacity: 1}, 1)
+.to("#sun", { x:"60vw", y:"-130vh", ease:"power1.out"})
+.to("#bsky", { backgroundColor: "#aaefff" }, 1.5)
+.to("#bottle", {y:"-98vh"}, 1.5)
+.to("#moon", {x:"60vw", y:"-80vh", ease:"power1.out"}, 1.5)
+.to("#shard8", {y:"-70vh", opacity: 1}, 1.5)
+.to("#shard11", {y:"-70vh", opacity: 1}, 1.5)
+.to("#shard13", {y:"-70vh", opacity: 1}, 1.5)
+.to("#shard14", {y:"-70vh", opacity: 1}, 1.5)
+.to("#shard3", {y:"-30vh", opacity: 1}, 1.5)
+.to("#shard9", {y:"-30vh", opacity: 1}, 1.5)
+.to("#shard12", {y:"-30vh", opacity: 1}, 1.5)
+.to("#shard6", {y:"-30vh", opacity: 1}, 1.5)
+.to("#sun", { x:"20vw", y:"-95vh", opacity:0, ease:"power1.out"})
+.to("#bottle", {y:"-101vh"}, 2)
+.to("#moon", {x:"100vw", y:"-100vh", ease:"power1.out"}, 2)
+.to("#shard8", {y:"-30vh", opacity: 1}, 2)
+.to("#shard11", {y:"-30vh", opacity: 1}, 2)
+.to("#shard13", {y:"-30vh", opacity: 1}, 2)
+.to("#shard14", {y:"-30vh", opacity: 1}, 2)
+
+let timeline6 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start6",     
+      start: "top 94%",           
+      end: "bottom 6%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#FFA500",
+      ///endColor: "#FFA500",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline6.to("#bsky", { backgroundColor: "#131862" })
+.to("#moon", { x:"60vw", y:"-220vh", ease:"power1.out"},0)
+.to("#shard16", {y:"-110vh", opacity: 1}, 0)
+.to("#shard17", {y:"-110vh", opacity: 1}, 0)
+.to("#shard18", {y:"-110vh", opacity: 1}, 0)
+.to("#shard19", {y:"-110vh", opacity: 1}, 0)
+.to("#shard20", {y:"-110vh", opacity: 1}, 0)
+.to("#topborder3", {y:"-220vh"}, 0)
+.to("#bottle", {y:"-220vh"},0)
+.to("#bsky", {y:"-220vh" }, 0)
+.to("#titlecardbox2", {y:"-220vh"}, 0)
+.to("#titlecardshadow2", {y:"-220vh"}, 0)
+.to("#tbottle", {y:"-220vh"}, 0)
+.to("#tbottle2", {y:"-220vh"}, 0)
+.to("#tbottle3", {y:"-220vh"}, 0)
+.to("#microl", {y:"-220vh"}, 0)
+.to("#micror", {y:"-220vh"}, 0)
+.to("#zoom", {y:"-220vh"}, 0)
+.to("#bwater", {y:"-220vh"}, 0)
+.to("#bwave", {y:"-220vh"}, 0)
+.to("#bwaveoverlay", {y:"-220vh", display: "none"}, 0)
+.to("#ocean", {backgroundColor: "#0d6292"})
+.to("#fallingtext", {y:"-100vh"}, 0.5)
+.to("#titlecardbox3", {y:"-100vh"}, 0.5)
+.to("#titlecardshadow3", {y:"-100vh"}, 0.5)
+.to("#ocean", {backgroundColor: "#0b4668"})
+.to("#fallingtext", {y:"-200vh"}, 1)
+.to("#titlecardbox3", {y:"-200vh"}, 1)
+.to("#titlecardshadow3", {y:"-200vh"}, 1)
+.to("#fallingtext2", {y:"-100vh"}, 1)
+.to("#titlecardbox4", {y:"-100vh"}, 1)
+.to("#titlecardshadow4", {y:"-100vh"}, 1)
+.to("#ocean", {backgroundColor: "#07293c"})
+.to("#fallingtext2", {y:"-200vh"}, 1.5)
+.to("#titlecardbox4", {y:"-200vh"}, 1.5)
+.to("#titlecardshadow4", {y:"-200vh"}, 1.5)
+.to("#fallingtext3", {y:"-100vh"}, 1.5)
+.to("#titlecardbox5", {y:"-100vh"}, 1.5)
+.to("#titlecardshadow5", {y:"-100vh"}, 1.5)
+.to("#ocean", {backgroundColor: "#041620"})
+.to("#fallingtext3", {y:"-200vh"}, 2)
+.to("#titlecardbox5", {y:"-200vh"}, 2)
+.to("#titlecardshadow5", {y:"-200vh"}, 2)
+.to("#ocean", {backgroundColor: "#031119"})
+.to("#seafloor", {y:"-75vh"})
+.to("#shard16", {y:"-70vh", opacity: 1})
+.to("#shard17", {y:"-70vh", opacity: 1},3.5)
+.to("#shard18", {y:"-70vh", opacity: 1},3.5)
+.to("#shard19", {y:"-70vh", opacity: 1},3.5)
+.to("#shard20", {y:"-70vh", opacity: 1},3.5)
+
+let timeline7 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start7",     
+      start: "top 95%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#FFC0CB",
+      ///endColor: "#FFC0CB",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline7.to("#frontisopod", { opacity: 1 })
+.to("#frontisopod", { scale: 1 })
+.to("#feasttext", { opacity: 1})
+.to("#frontisopodoutstretch", { opacity: 1})
+.to("#titlecardbox6", {opacity: 1}, 1)
+.to("#titlecardshadow6", {opacity: 1}, 1)
+.to("#frontisopodoutstretch", { opacity: 1})
+.to("#feasttext", { opacity: 0}, 2)
+.to("#titlecardbox6", {opacity: 0}, 2)
+.to("#titlecardshadow6", {opacity: 0}, 2)
+.to("#titlecardbox6", {width: "53vw"}, 2.5)
+.to("#titlecardshadow6", {width: "53vw"}, 2.5)
+.to("#feasttext2", { opacity: 1})
+.to("#shard16", {opacity: 0}, 3)
+.to("#shard17", {opacity: 0}, 3)
+.to("#shard18", {opacity: 0}, 3)
+.to("#frontisopodoutstretch", { opacity: 0}, 3)
+.to("#frontisopodconsume", { opacity: 1}, 3)
+.to("#titlecardbox6", {opacity: 1}, 3)
+.to("#titlecardshadow6", {opacity: 1}, 3)
+
+
+
+
+let timeline8 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start8",     
+      start: "top 75%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#7C4700",
+      ///endColor: "#7C4700",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline8.to("#leftborder3", {x:"-100vw"}, 0)
+.to("#rightborder3", {x:"-100vw"}, 0)
+.to("#seafloor", {x:"-200vw"}, 0)
+.to("#shard16", {x:"-130vw"}, 0)
+.to("#shard17", {x:"-130vw"}, 0)
+.to("#shard18", {x:"-130vw"}, 0)
+.to("#shard19", {x:"-130vw"}, 0)
+.to("#shard20", {x:"-130vw"}, 0)
+.to("#frontisopod", {x:"-200vw"}, 0)
+.to("#frontisopodconsume", {x:"-200vw"}, 0)
+.to("#titlecardbox6", {x:"-200vw"}, 0)
+.to("#titlecardshadow6", {x:"-200vw"}, 0)
+.to("#feasttext2", {x:"-200vw"}, 0)
+.to("#ocean", {x:"-100vw"}, 0)
+.to("#leftborder4", {x:"-101vw"}, 0)
+.to("#rightborder4", {x:"-101vw"}, 0)
+.to("#ocean2", {x:"-100vw"}, 0)
+.to("#backisopod", {x:"-100vw"}, 0)
+
+
+let timeline9 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start9",     
+      start: "top 100%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#EDE8D0",
+      ///endColor: "#EDE8D0",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline9.to("#upwardtext", {y:"100vh"})
+.to("#titlecardbox7", {y:"100vh"}, 0)
+.to("#titlecardshadow7", {y:"100vh"}, 0)
+.to("#ocean2", {backgroundColor: "#041620"})
+.to("#upwardtext", {y:"200vh"})
+.to("#titlecardbox7", {y:"200vh"}, 1)
+.to("#titlecardshadow7", {y:"200vh"}, 1)
+.to("#zoomcells", {opacity: 1})
+.to("#cell", {opacity: 1}, 2)
+.to("#cell2", {opacity: 1}, 2)
+.to("#cell3", {opacity: 1}, 2)
+.to("#cell", {scale:.09} )
+.to("#cell2", {scale:.09}, 2.5)
+.to("#cell3", {scale:.09}, 2.5)
+.to("#backisopod", {scale:.45}, 2.5)
+.to("#ocean2", {backgroundColor: "#07293c"}, 2.5)
+.to("#upwardtext2", {y:"100vh"}, 2.5)
+.to("#upwardtext3", {y:"100vh"}, 2.5)
+.to("#titlecardbox8", {y:"100vh"}, 2.5)
+.to("#titlecardshadow8", {y:"100vh"}, 2.5)
+.to("#cell", {scale:.11})
+.to("#cell2", {scale:.11}, 3)
+.to("#cell3", {scale:.11}, 3)
+.to("#backisopod", {scale:.57}, 3)
+.to("#ocean2", {backgroundColor: "#0b4668"}, 3)
+.to("#cell", {scale:.15})
+.to("#cell2", {scale:.15}, 3.5)
+.to("#cell3", {scale:.15}, 3.5)
+.to("#backisopod", {scale:.75}, 3.5)
+.to("#ocean2", {backgroundColor: "#0d6292"}, 3.5)
+.to("#upwardtext2", {y:"200vh"})
+.to("#upwardtext3", {y:"200vh"}, 4)
+.to("#titlecardbox8", {y:"200vh"}, 4)
+.to("#titlecardshadow8", {y:"200vh"}, 4)
+.to("#backisopod", {y:"50vh", scale:.9})
+.to("#cell", {opacity: 0}, 4.5)
+.to("#cell2", {opacity: 0}, 4.5)
+.to("#cell3", {opacity: 0}, 4.5)
+.to("#zoomcells", {opacity: 0}, 4.5)
+.to("#bottomtrash", {y:"50vh"}, 4.5)
+.to("#topborder5", {y:"50vh"}, 4.5)
+
+let timeline10 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start10",     
+      start: "top 90%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#FF00FF",
+      ///endColor: "#FF00FF",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline10.to("#backisopod", {y:"10vh"})
+.to("#bottomtrash", {x:"+=15", yoyo:true, repeat: 1})
+.to("#bottomtrash", {x:"-=15", yoyo:true, repeat: 1})
+.to("#bottomtrash", {y:"100vh"}, 1)
+.to("#ocean2", {y:"50vh"}, 1)
+.to("#rightborder4", {y:"50vh"}, 1)
+.to("#leftborder4", {y:"50vh"}, 1)
+.to("#topborder5", {y:"100vh"}, 1)
+.to("#bottomborder5", {y:"50vh"}, 1)
+.to("#rightborder5", {y:"50vh"}, 1)
+.to("#leftborder5", {y:"50vh"}, 1)
+.to("#inbetween5-6", {y:"50vh"},1)
+.to("#emergesky", {y:"50vh"}, 1)
+.to("#emergewater", {y:"50vh"}, 1)
+.to("#emergetrash", {y:"50vh"}, 1)
+.to("#emergetrash2", {y:"50vh"}, 1)
+.to("#emergetrash3", {y:"50vh"}, 1)
+.to("#emergetrash4", {y:"50vh"}, 1)
+.to("#emergetrash5", {y:"50vh"}, 1)
+.to("#emergetrash6", {y:"50vh"}, 1)
+.to("#emergetrash", {x:"+=15", yoyo:true, repeat: 1}, 1)
+.to("#emergetrash", {x:"-=15", yoyo:true, repeat: 1}, 1)
+.to("#backisopod", {y:"100vh"}, 1.5)
+.to("#bottomtrash", {x:"+=15", yoyo:true, repeat: 1}, 1.5)
+.to("#bottomtrash", {x:"-=15", yoyo:true, repeat: 1}, 1.5)
+.to("#bottomtrash", {y:"150vh"}, 1.5)
+.to("#ocean2", {y:"100vh"}, 1.5)
+.to("#rightborder4", {y:"100vh"}, 1.5)
+.to("#leftborder4", {y:"100vh"}, 1.5)
+.to("#topborder5", {y:"178vh"}, 1.5)
+.to("#bottomborder5", {y:"128vh"}, 1.5)
+.to("#rightborder5", {y:"100vh"}, 1.5)
+.to("#leftborder5", {y:"100vh"}, 1.5)
+.to("#inbetween5-6", {y:"128vh"},1.5)
+.to("#emergetrash", {y:"128vh"}, 1.5)
+.to("#emergetrash2", {y:"100vh"}, 1.5)
+.to("#emergetrash3", {y:"100vh"}, 1.5)
+.to("#emergetrash4", {y:"100vh"}, 1.5)
+.to("#emergetrash5", {y:"100vh"}, 1.5)
+.to("#emergetrash6", {y:"100vh"}, 1.5)
+.to("#topborder6", {y:"100vh"}, 1.5)
+.to("#emergewater", {y:"100vh"}, 1.5)
+.to("#emergesky", {y:"110vh"}, 1.5)
+
+let timeline11 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start11",     
+      start: "top 90%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#FF7E70",
+      ///endColor: "#FF7E70",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline11.to("#emergetrash", {x:"+=15", yoyo:true, repeat: 1})
+.to("#emergetrash", {x:"-=15", yoyo:true, repeat: 1})
+.to("#emergeisopodwtrash", {y:"-107vh"})
+.to("#emergeisopodwotrash", {opacity: 1}, 3)
+.to("#emergeisopodwtrash", {opacity: 0}, 3)
+.to("#foghorn", {opacity: 1})
+.to("#foghorn2", {opacity: 1})
+.to("#foghorn3", {opacity: 1})
+.to("#foghorn", {opacity: 0})
+.to("#foghorn2", {opacity: 0})
+.to("#foghorn3", {opacity: 0})
+.to("#initalboattext", {opacity: 1})
+.to("#titlecardbox9", {opacity: 1}, 6.5)
+.to("#titlecardshadow9", {opacity: 1}, 6.5)
+.to("#emergeisopodwotrash", {x:"50vw", y:"40vh"}, )
+.to("#emergetrash", {x:"50vw", y:"159.2vh"}, 7)
+.to("#emergetrash2", {x:"50vw", y:"119.2vh"}, 7)
+.to("#emergetrash3", {x:"50vw", y:"119.2vh"}, 7)
+.to("#emergetrash4", {x:"50vw", y:"119.2vh"}, 7)
+.to("#emergetrash5", {x:"50vw", y:"119.2vh"}, 7)
+.to("#emergetrash6", {x:"50vw", y:"119.2vh"}, 7)
+.to("#emergewater", {y:"110vh"}, 7)
+.to("#emergesky", {y:"110vh"}, 7)
+.to("#towboatside", {x:"50vw", y:"10vh", scale: .02}, 7)
+.to("#towboatcargo", {x:"47vw", y:"10vh", scale: .08}, 7)
+.to("#cargo", {x:"47vw", y:"10vh"}, 7)
+.to("#cargo2", {x:"47vw", y:"10vh"}, 7)
+.to("#cargo3", {x:"47vw", y:"10vh"}, 7)
+.to("#cargo4", {x:"47vw", y:"10vh"}, 7)
+.to("#emergetrash7", {x:"50vw", y:"9vh"}, 7)
+.to("#chasesky", {opacity: 1}, 7)
+
+let timeline12 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start12",     
+      start: "top 85%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#FFFAF4",
+      ///endColor: "#FFFAF4",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+   ///},
+  }
+});
+
+timeline12.to("#initalboattext", {opacity: 0})
+.to("#titlecardbox9", {opacity: 0}, 0)
+.to("#titlecardshadow9", {opacity: 0}, 0)
+.to("#emergeisopodwotrash", {y:"120vh", rotate: "-30deg"}, .5)
+.to("#towboatside", {y:"18vh", x:"100vh", scale:".1"}, 1)
+.to("#towboatcargo", {y:"19.5vh", x:"116.4vh", scale:".26"}, 1)
+.to("#cargo", {y:"14.25vh", x:"105vh", scale:".26"}, 1)
+.to("#cargo2", {y:"14.35vh", x:"112.9vh", scale:".26"}, 1)
+.to("#cargo3", {y:"14.3vh", x:"119.8vh", scale:".26"}, 1)
+.to("#cargo4", {y:"14.25vh", x:"127vh", scale:".26"}, 1)
+.to("#emergetrash2", {y:"250vh", x:"200vw", scale:"1"}, 1)
+.to("#emergetrash4", {y:"250vh", x:"200vw", scale:"1"}, 1)
+.to("#emergetrash5", {y:"250vh", x:"200vw", scale:"1"}, 1)
+.to("#emergetrash6", {y:"250vh", x:"200vw", scale:"1"}, 1)
+.to("#emergetrash7", {y:"250vh", x:"200vw", scale:"1"}, 1)
+.to("#boatoceanoverlay", {y:"-53vh"}, 1)
+.to("#emergewater", {y:"120vh"}, 1)
+.to("#emergesky", {y:"0vh"}, 1)
+.to("#chasesky", {y:"-110vh"}, 1)
+.to("#isopodside", {x:"-50vw"}, 1.5)
+
+let timeline13 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start13",     
+      start: "top 90%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#FF6347",
+      ///endColor: "#FF6347",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline13.to("#rightborder5", {x:"200vw"})
+.to("#cargo", {x:"118vh"}, 0)
+.to("#cargo2", {x:"125.9vh"}, 0)
+.to("#cargo3", {x:"132.8vh"}, 0)
+.to("#cargo4", {x:"140vh", y:"18vh"}, 0)
+.to("#traveltext", {x:"100vw"}, 0.5)
+.to("#titlecardbox10", {x:"100vw"}, 0.5)
+.to("#titlecardshadow10", {x:"100vw"}, 0.5)
+.to("#cargo", {x:"126vh"}, 0.5)
+.to("#cargo2", {x:"133.9vh"}, 0.5)
+.to("#cargo3", {x:"140.8vh", y: "18vh"}, 0.5)
+.to("#cargo4", {x:"240vh", y:"50vh", opacity: 0}, 0.5)
+.to("#thehills", {x:"185vw"}, 1)
+.to("#cargo", {x:"137vh"}, 1)
+.to("#cargo2", {x:"144.9vh", y:"18vh"}, 1)
+.to("#cargo3", {x:"240vh", y:"50vh", opacity: 0}, 1)
+.to("#thehills", {x:"255vw"}, 1.5)
+.to("#cargo", {x:"150vh", y:"18vh"}, 1.5)
+.to("#cargo2", {x:"240vh", y:"50vh", opacity: 0}, 1.5)
+.to("#goldengate", {x:"217vw"})
+.to("#thehills", {x: "310vw"}, 2)
+.to("#traveltext", {x:"200vw"}, 2)
+.to("#cargo", {x:"250vh", y:"50vh", opacity: 0}, 2)
+.to("#titlecardbox10", {x:"200vw"}, 2)
+.to("#titlecardshadow10", {x:"200vw"}, 2)
+
+let timeline14 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start14",     
+      start: "top 92%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ////startColor: "#F0FFFF",
+      ////endColor: "#F0FFFF",
+      ////fontSize: "12px",
+      ///fontWeight: "bold",
+   /// },
+  }
+});
+
+timeline14.to("#goldengate", {x:"350vw"})
+.to("#thehills", {x:"385vw"}, 0)
+.to("#cityscape", {x:"535vw"}, 0)
+.to("#thehills", {x:"470vw"})
+.to("#cityscape", {x:"600vw"}, .5)
+.to("#docks", {x:"100vw"}, .5)
+.to("#thehills", {x:"515vw"})
+.to("#cityscape", {x:"620vw"}, 1)
+.to("#docks", {x:"140vw"}, 1)
+
+let timeline15 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start15",     
+      start: "top 85%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#FFEBCD",
+      ///endColor: "#FFEBCD",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline15.to("#towboatcargo4", {y:"200vw"})
+.to("#towboatside", {y:"200vw"}, 0)
+.to("#towboatcargo", {y:"200vw"}, 0)
+.to("#isopodside", {y:"200vw"}, 0)
+.to("#thehills", {y:"300vw"}, 0)
+.to("#cityscape", {y:"200vw"}, 0)
+.to("#docks", {y:"200vw"}, 0)
+.to("#chasesky", {y:"150vw"}, 0)
+.to("#boatoceanoverlay", {y:"200vw"}, 0)
+.to("#emergewater", {y:"200vw"}, 0)
+.to("#topborder6", {y:"200vw"}, 0)
+.to("#bottomborder5", {y:"200vw"}, 0)
+.to("#leftborder5", {y:"200vw"}, 0)
+.to("#backisopod", {y:"200vw"}, 0)
+.to("#inbetween7-8", {y:"145vw"}, 0)
+.to("#bottomborder6", {y:"138vh"}, 0)
+.to("#topborder7", {y:"140vh"}, 0)
+.to("#leftborder7", {y:"140vh"}, 0)
+.to("#rightborder7", {y:"140vh"}, 0)
+.to("#closeupwater", {y:"140vh"}, 0)
+.to("#closeupsky", {y:"140vh"}, 0)
+
+let timeline16 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start16",     
+      start: "top 91%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#D2691E",
+      ///endColor: "#D2691E",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline16.to("#frontviewboat", {opacity: 1})
+.to("#frontviewboat", {y:"3000vh", scale: "50"})
+.to("#splash", {y:"-70vh"}, .7)
+.to("#hunchedisopod", {y:"-160vh"}, 1)
+.to("#frontviewboat", {x:"-=35vw", yoyo:true, repeat: 1, y:"+=250vh", yoyo:true, repeat: 1}, 1)
+.to("#splash", {opacity: 0})
+.to("#frontfacingwave", {scaleY: ".85"}, 1.5)
+.to("#frontfacingwave", {zIndex: 500, y:"50vh"}, 2)
+.to("#frontviewboat", {opacity: 0}, 2)
+.to("#frontfacingwave", {zIndex: 500, y:"110vh"})
+.to("#hunchedisopod", {y:"100vh"})
+.to("#frontfacingwave", {y:"100", scale: 3})
+
+let timeline17 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start17",     
+      start: "top 91%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#B8860B",
+      ///endColor: "#B8860B",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline17.to("#closeupsky", {opacity: 0})
+.to("#closeupwater", {opacity: 0}, 0)
+.to("#dockbackdrop", {opacity: 1}, 0)
+.to("#man1", {opacity: 1}, 0)
+.to("#man2", {opacity: 1}, 0)
+.to("#frontfacingwave", {y: "1000vh"})
+.to("#sidewave", {x:"110vw"})
+.to("#sidewave", {x:"240vw", y:"45vh"})
+.to("#man1", {opacity: 0}, 1.5)
+.to("#man2", {opacity: 0}, 1.5)
+.to("#wavetext", {opacity:1}, 1.5)
+.to("#wavetext2", {opacity:1}, 1.5)
+.to("#titlecardbox11", {opacity: 1}, 1.5)
+.to("#titlecardshadow11", {opacity: 1}, 1.5)
+
+let timeline18 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start18",     
+      start: "top 91%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#FFFAF0",
+      ///endColor: "#FFFAF0",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline18.to("#closeupsky", {y:"100vh"})
+.to("#closeupwater", {y:"100vh"}, 0)
+.to("#dockbackdrop", {y:"100vh"}, 0)
+.to("#man1", {y:"100vh"}, 0)
+.to("#man2", {y:"100vh"}, 0)
+.to("#sidewave", {y:"100vh"}, 0)
+.to("#wavetext", {y:"100vh"}, 0)
+.to("#wavetext2", {y:"100vh"}, 0)
+.to("#titlecardbox11", {y:"100vh"}, 0)
+.to("#titlecardshadow11", {y:"100vh"} , 0)
+.to("#bottomborder6", {y:"240vh"}, 0)
+.to("#topborder7", {y:"240vh"}, 0)
+.to("#leftborder7", {y:"240vh"}, 0)
+.to("#rightborder7", {y:"240vh"}, 0)
+.to("#bottomborder7", {y:"110vh"}, 0)
+.to("#topborder8", {y:"110vh"}, 0)
+.to("#leftborder8", {y:"110vh"}, 0)
+.to("#rightborder8", {y:"110vh"}, 0)
+.to("#prospectivecrates", {y:"110vh"}, 0)
+.to("#frontball", {opacity: 1})
+.to("#curltext", {opacity: 1})
+.to("#curltext2", {opacity: 1}, 1)
+.to("#titlecardbox12", {opacity: 1}, 1)
+.to("#titlecardshadow12", {opacity: 1}, 1)
+.to("#frontball", {scale: 3.9, x:"2vw", y:"-10vh"})
+.to("#backball", {scale: 3.9, x:"2vw", y:"-10vh"}, 1.5)
+
+let timeline19 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start19",     
+      start: "top 91%",           
+      end: "bottom -10%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#F8F8FF",
+      ///endColor: "#F8F8FF",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline19.to("#curltext", {opacity: 0})
+.to("#curltext2", {opacity: 0},0)
+.to("#titlecardbox12", {opacity: 0}, 0)
+.to("#titlecardshadow12", {opacity: 0}, 0)
+.to("#backball", {opacity: 1}, 0)
+.to("#prospectivecrates", {opacity: 0}, 0)
+.to("#citysky", {opacity: 1}, 0)
+.to("#streetview", {opacity: 1}, 0)
+.to("#building", {opacity: 1}, 0)
+.to("#building2", {opacity: 1}, 0)
+.to("#bbuilding1", {opacity: 1}, 0)
+.to("#bbuilding2", {opacity: 1}, 0)
+.to("#frontball", {opacity: 0})
+.to("#backball", {scale: .5, x:"4vw"})
+.to("#streetview", {scale: 5, x:"-17vw", y:"-8vh"})
+.to("#building", {scale: .8, x:"-28vw", y:"-50.5vh"}, 1.5)
+.to("#building2", {scale: .6, x:"30vw", y:"-48.5vh"}, 1.5)
+.to("#bbuilding1", {scale: .7, x:"-10vw", y:"-42vh"}, 1.5)
+.to("#bbuilding2", {scale: .8, x:"15vh", y:"-34.5vh"}, 1.5)
+.to("#smallsmokecloud", {opacity: 1}, 1.5)
+.to("#smallsmokecloud", {scale: 2})
+.to("#bbuilding1", {attr: {src:"img/Broke1.png"}})
+.to("#bbuilding2", {attr: {src:"img/Broke2.png"}}, 2.5)
+.to("#backball", {opacity: 0}, 2.5)
+.to("#smallsmokecloud", {opacity: 0})
+.to("#smokecloud", {opacity: 1}, 3)
+.to("#smokecloud", {scale: 1, y:"20vh"})
+.to("#streetview", {y:"150vh"}, 3.5)
+.to("#building", {y:"150vh"}, 3.5)
+.to("#building2", {y:"150vh"}, 3.5)
+.to("#bbuilding1", {y:"150vh"}, 3.5)
+.to("#bbuilding2", {y:"150vh"}, 3.5)
+.to("#smokecloud", {scale: 2, y:"35vh"})
+.to("#streetview", {y:"250vh"}, 4)
+.to("#building", {y:"250vh"}, 4)
+.to("#building2", {y:"250vh"}, 4)
+.to("#bbuilding1", {y:"250vh"}, 4)
+.to("#bbuilding2", {y:"250vh"}, 4)
+.to("#smokecloud", {scale: 4, y: "78vh"})
+.to("#tagline", {opacity: 1})
+.to("#titlecardbox13", {opacity: 1}, 5)
+.to("#titlecardshadow13", {opacity: 1}, 5)
+.to("#citysky", {opacity: 0})
+.to("#building", {opacity: 0}, 5.5)
+.to("#building2", {opacity: 0}, 5.5)
+.to("#bbuilding1", {opacity: 0}, 5.5)
+.to("#bbuilding2", {opacity: 0}, 5.5)
+.to("#streetview", {opacity: 0}, 5.5)
+.to("#titlecardbox13", {opacity: 0}, 5.5)
+.to("#titlecardshadow13", {opacity: 0}, 5.5)
+.to("#tagline", {opacity: 0}, 5.5)
+.to("#insidebackground", {opacity: 1}, 5.5)
+.to("#insideskyscraper", {opacity: 1}, 5.5)
+.to("#bottomisopod", {opacity: 1}, 5.5)
+.to("#glasspane", {opacity: 0.25}, 5.5)
+.to("#windowbars", {opacity: 1}, 5.5)
+
+
+
+let timeline20 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start20",     
+      start: "top 87%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#F8F8FF",
+      ///endColor: "#F8F8FF",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline20.to("#smokecloud", {opacity: 0})
+.to("#bottomisopod", {x:"60vw"})
+.to("#bottomisopod", {x:"80vw"})
+.to("#bottomisopod", {x:"110vw"})
+.to("#bottomisopod", {x:"140vw"})
+.to("#bottomisopod", {x:"170vw"})
+.to("#bottomisopod", {x:"200vw"})
+.to("#bottomisopod", {x:"230vw"})
+.to("#bottomisopod", {x:"260vw"})
+.to("#bottomisopod", {x:"290vw"})
+.to("#bottomisopod", {x:"320vw"})
+
+let timeline21 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start21",     
+      start: "top 94%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#F8F8FF",
+      ///endColor: "#F8F8FF",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline21.to("#bottomborder7", {x:"-110vw"})
+.to("#topborder8", {x:"-110vw"}, 0)
+.to("#leftborder8", {x:"-110vw"}, 0)
+.to("#rightborder8", {x:"-110vw"}, 0)
+.to("#glasspane", {x:"-110vw"}, 0)
+.to("#windowbars", {x:"-115vw"}, 0)
+.to("#insideskyscraper", {x:"-110vw"}, 0)
+.to("#insidebackground", {x:"-112vw"}, 0)
+.to("#bottomborder8", {x:"-110vw"}, 0)
+.to("#topborder9", {x:"-110vw"}, 0)
+.to("#leftborder9", {x:"-110vw"}, 0)
+.to("#rightborder9", {x:"-110vw"}, 0)
+.to("#salesforce", {x:"-110vw"}, 0)
+
+let timeline22 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start22",     
+      start: "top 94%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#F8F8FF",
+      ///endColor: "#F8F8FF",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline22.to("#chopper", {x:"55vw", y:"-55vh"})
+.to("#chopper2", {x:"-35vw", y:"-25vh"})
+.to("#rocket", {opacity: 1}, .5)
+.to("#rocket", {scale: .15, x:"30vw", y:"-25vh"})
+.to("#rocketsmoke", {opacity: 1})
+.to("#choppertext", {opacity: 1}, 1.5)
+.to("#choppertext2", {opacity: 1}, 1.5)
+.to("#choppertext3", {opacity: 1}, 1.5)
+.to("#titlecardbox14", {opacity: 1}, 1.5)
+.to("#titlecardshadow14", {opacity: 1}, 1.5)
+.to("#rocket", {opacity: 0}, 1.5)
+.to("#rocketsmoke", {opacity: 0})
+.to("#rocket2", {opacity: 1}, 2)
+.to("#rocket2", {scale: "-.1, .1", rotate: "30deg", x:"-35vw", y:"-1.5vh"})
+.to("#rocketsmoke2", {opacity: 1})
+.to("#choppertext", {opacity: 0})
+.to("#choppertext2", {opacity: 0}, 3.5)
+.to("#choppertext3", {opacity: 0}, 3.5)
+.to("#titlecardbox14", {opacity: 0}, 3.5)
+.to("#titlecardshadow14", {opacity: 0}, 3.5)
+.to("#rocket2", {opacity: 0}, 3.5)
+.to("#titlecardbox15", {opacity: 1})
+.to("#titlecardshadow15", {opacity: 1}, 4)
+.to("#choppertext4", {opacity: 1}, 4)
+.to("#choppertext5", {opacity: 1}, 4)
+.to("#rocketsmoke2", {opacity: 0}, 4)
+
+let timeline23 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start23",     
+      start: "top 60%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#F8F8FF",
+      ///endColor: "#F8F8FF",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline23.to("#titlecardbox15", {y:"-110vh"})
+.to("#titlecardshadow15", {y:"-110vh"}, 0)
+.to("#choppertext4", {y:"-110vh"}, 0)
+.to("#choppertext5", {y:"-110vh"}, 0)
+.to("#chopper", {y:"-180vh"}, 0)
+.to("#chopper2", {y:"-130vh"}, 0)
+.to("#bottomborder8", {y:"-110vh"}, 0)
+.to("#topborder9", {y:"-110vh"}, 0)
+.to("#leftborder9", {y:"-111vh"}, 0)
+.to("#rightborder9", {y:"-110vh"}, 0)
+.to("#salesforce", {y:"-114.75vh"}, 0)
+.to("#bottomborder9", {y:"-110vh"}, 0)
+.to("#topborder10", {y:"-110vh"}, 0)
+.to("#leftborder10", {y:"-110vh"}, 0)
+.to("#rightborder10", {y:"-110vh"}, 0)
+.to("#transamerican", {y:"-110vh"},0)
+.to("#rooftops", {y:"-110vh"}, 0)
+
+
+let timeline24 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start24",     
+      start: "top 93%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#F8F8FF",
+      ///endColor: "#F8F8FF",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline24.to("#spearedisopod", {y:"60vh", x:"-20vw"})
+.to("#backshell", {y:"60vh", x:"-20vw"}, 0)
+.to("#spearedisopod", {y:"77vh", attr: {src:"img/SphearedIsopod.png"}})
+.to("#backshell", {y:"77vh"}, .5)
+.to("#speartext", {opacity: 1}, .5)
+.to("#speartext2", {opacity: 1}, .5)
+.to("#titlecardbox16", {opacity: 1}, .5)
+.to("#titlecardshadow16", {opacity: 1}, .5)
+.to("#trashfalls", {opacity: 1})
+.to("#speartext", {opacity: 0}, 1)
+.to("#speartext2", {opacity: 0}, 1)
+.to("#speartext3", {opacity: 1})
+.to("#speartext4", {opacity: 1}, 1.5)
+
+
+let timeline25 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start25",     
+      start: "top 75%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#F8F8FF",
+      ///endColor: "#F8F8FF",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline25.to("#spearedisopod", {y:"-110vh"})
+.to("#backshell", {y:"-110vh"}, 0)
+.to("#speartext3", {y:"-110vh"}, 0)
+.to("#speartext4", {y:"-110vh"}, 0)
+.to("#titlecardbox16", {y:"-110vh"}, 0)
+.to("#titlecardshadow16", {y:"-110vh"}, 0)
+.to("#transamerican", {y:"-420vh"}, 0)
+.to("#trashfalls", {y:"-220vh"}, 0)
+.to("#bottomborder9", {y:"-220vh"}, 0)
+.to("#topborder10", {y:"-220vh"}, 0)
+.to("#leftborder10", {y:"-220vh"}, 0)
+.to("#rightborder10", {y:"-220vh"}, 0)
+.to("#rooftops", {y:"-222vh"}, 0)
+.to("#bottomborder10", {y:"-110vh"}, 0)
+.to("#topborder11", {y:"-110vh"}, 0)
+.to("#leftborder11", {y:"-110vh"}, 0)
+.to("#rightborder11", {y:"-110vh"}, 0)
+.to("#finalsky", {y:"-110vh"}, 0)
+.to("#finalbottle", {y:"-110vh"}, 0)
+.to("#finalsky", {y:"-200vh"})
+.to("#finalbuilding", {y:"-120vh"}, .5)
+.to("#finalbuilding", {y:"-220vh"})
+.to("#finalbuilding", {y:"-320vh"})
+.to("#finalbuilding", {y:"-420vh"})
+.to("#finalbuilding", {y:"-520vh"})
+.to("#finalfade", {opacity: 0.5}, 2.5)
+.to("#finalfade", {opacity: 1})
+
+let timeline26 = gsap.timeline({       
+      scrollTrigger: {
+      trigger: "#start26",     
+      start: "top 93%",           
+      end: "bottom 0%",         
+      scrub: true,              
+      toggleActions: "restart none reverse none ",
+      ///markers: {
+      ///startColor: "#F8F8FF",
+      ///endColor: "#F8F8FF",
+      ///fontSize: "12px",
+      ///fontWeight: "bold",
+    ///},
+  }
+});
+
+timeline26.to("#finaltext", {opacity: 1})
+.to("#finaltext2", {opacity: 1})
+.to("#finaltext3", {opacity: 1})
+
+let scrollerId = null;
+let isScrolling = false;
+
+function startScroll() {
+  scrollerId = setInterval(() => {
+    window.scrollBy(0, 2);
+  }, 10);
+  isScrolling = true;
+}
+
+function stopScroll() {
+  clearInterval(scrollerId);
+  scrollerId = null;
+  isScrolling = false;
+}
+
+document.addEventListener("keydown", function (event) {
+  // Use event.code for consistent key detection (case-insensitive)
+  if (event.code === "KeyS") {
+    if (!isScrolling) {
+      startScroll();
+    } else {
+      stopScroll();
+    }
+  }
+});
+
+window.addEventListener("load", () => {
+  gsap.to("#loadingscreen", {
+    opacity: 0,
+    duration: 1,
+    onComplete: () => {
+      document.getElementById("loadingscreen").style.display = "none";
+      document.body.style.overflow = "auto";
+  }
+}, 2);
+})
+
+
+
+
+  </script>
+  </body>
+</html>

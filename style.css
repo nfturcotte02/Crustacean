@@ -1,0 +1,2349 @@
+@font-face {
+    font-family: Them;
+    src: url(fonts/Them.ttf);
+}
+
+@font-face {
+    font-family: Might;
+    src: url(fonts/mightmakesrightbb.ttf);
+}
+
+#loadingscreen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    display: flex;
+    z-index: 1000;
+}
+
+#loadingimg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#loadingiso {
+    position: fixed;
+    left: 43%;
+    top: 50%;
+    animation-name: loadinganim;
+    animation-play-state: running;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+
+@keyframes loadinganim {
+    0% {rotate: 0deg}
+    25% {rotate: 360deg}
+    50% {rotate: 720deg}
+    75% {rotate: 1080deg}
+    100% {rotate: 1440deg}
+}
+
+.wrapper {
+    overflow-x:hidden;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* "panel1"/frame1 specific elements */
+
+.panel1 {
+    height: 100vh;
+    width: 100vw;
+}
+
+#background1 {
+    position: fixed;
+    height: 100vh;
+    width: 300vw;
+    top:0vh;
+    left:0vw;
+}
+
+#plank {
+    position: fixed;
+    top: 42vh;
+    left: 330vh;
+    transform: scale(.5);
+    animation-name: plankanim;
+    animation-play-state: running;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes plankanim {
+    0% {margin-top: 0px;}
+    25% {margin-top: 7px;}
+    50% {margin-top: -7px}
+    75% {margin-top: 3px}
+}
+
+#tire {
+    position: fixed;
+    transform: scale(0.2) rotate(-90deg);
+    top: 8vh;
+    left: 82vw;
+    animation-name: tireanim;
+    animation-play-state: running;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tireanim {
+    0% {margin-top: 0px}
+    25% {margin-top: 5px}
+    50% {margin-top: -5px}
+    75% {margin-top: 2px}
+}
+
+#cup {
+    position: fixed;
+    transform: scale(.6);
+    top: 20vh;
+    left: 3550px;
+    animation-name: cupanim;
+    animation-play-state: running;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cupanim {
+    0% {margin-top: 0px}
+    25% {margin-top: 15px}
+    50% {margin-top: -15px}
+    75% {margin-top: 7px}
+}
+
+#crumpledcan {
+    position: fixed;
+    transform: scale(.75);
+    left: 37vw;
+    top: 23vh;
+    animation-name: cananim;
+    animation-play-state: running;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cananim {
+    0% {margin-top: 0px;}
+    25% {margin-top: 20px;}
+    50% {margin-top: -20px;}
+    75% {margin-top: 15px;}
+}
+
+#wateroverlay1 {
+    position:fixed;
+    height: 100%;
+    width: 300%;
+    top: 0%;
+    left: 0%;
+}
+
+#titletext {
+    position: fixed;
+    top: 5vh;
+    left: 35vw;
+    transform: skew(20deg, 10deg);
+}
+
+#Title {
+    font-family: Them;
+    position: relative;
+    font-size: 50px;
+    color: grey;
+    text-shadow: -5px 10px black;
+    line-height: 30px;
+    
+}
+
+#sideborder1 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: 0;
+    left: -1.5%;
+    background-color: black;
+}
+
+#topborder1 {
+    position: fixed;
+    width:4500px;
+    height: 2%;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+#bottomborder1 {
+    position: fixed;
+    width:4500px;
+    height: 2%;
+    top: 98%;
+    left: 0;
+    background-color: black;
+}
+
+#rightborder1 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: 0;
+    left: 4500px;
+    background-color: black;
+}
+
+#inbetween1-2 {
+    position: fixed;
+    height: 100%;
+    width: 8%;
+    top: 0;
+    left: 4500px;
+    background-color: white;
+}
+
+#start1 {
+    position:fixed;
+    top: 100vh;
+    width: 100px; 
+    height: 50px;
+    background-color: red;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+/* panel2/frame 2 specific elements */
+
+.panel2 {
+    top: 100vh;
+    height: 100vh;
+    width: 100vw;
+}
+
+#background2 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 4600px;
+}
+
+#trashisle {
+    position: fixed;
+    left: 4500px;
+    top: -50px;
+    transform: scale(0.1);
+}
+
+#leftborder2 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: 0;
+    left: 4600px;
+    background-color: black;
+}
+
+#rightborder2 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: 0;
+    left: 6085px;
+    background-color: black;
+}
+
+#topborder2 {
+    position: fixed;
+    width:100%;
+    height: 2%;
+    top: 0;
+    left: 4600px;
+    background-color: black;
+}
+
+#bottomborder2 {
+    position: fixed;
+    width: 100%;
+    height: 2%;
+    top: 98%;
+    left: 4600px;
+    background-color: black;
+}
+
+#titlecardbox {
+    position: fixed;
+    width: 53%;
+    height: 12%;
+    top: 3.5vh;
+    left: 2vw;
+    background-image: radial-gradient(#fffac8, #fffbdc);
+    opacity: 0;
+}
+
+#titlecardshadow {
+    position: fixed;
+    width: 53%;
+    height: 12%;
+    top: 5vh;
+    left: 3vw;
+    background-color: #463437;
+    opacity: 0;
+}
+
+#tgarb1 {
+    font-family: Might;
+    position: fixed;
+    top: 1vh;
+    left: 3vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#tgarb2 {
+    font-family: Might;
+    position: fixed;
+    top: 5vh;
+    left: 3vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#start2 {
+    position:fixed;
+    top: 200vh;
+    width: 100px; 
+    height: 50px;
+    background-color: green;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+/* panel3/frame 3 specific elements */
+
+.panel3 {
+    top: 200vh;
+    height: 400vh;
+    width: 100vw;
+}
+
+#ocean {
+    position: fixed;
+    width: 100%;
+    height: 200vh;
+    background-color: #0d81c3;
+    top:100vh;
+    left: -177vh;
+}
+
+#bsky {
+    position: fixed;
+    width: 100%;
+    height: 45%;
+    left: -100vw;
+    top: 100vh;
+    background-color: #aaefff;
+}
+
+#bwater {
+    position: fixed;
+    width: 100%;
+    height: 25%;
+    left: -100vw;
+    top: 145vh;
+    background-image: linear-gradient(to bottom, #0067cc, #0d7bba);
+}
+
+#bwave {
+    position: fixed;
+    width: 100%;
+    height: 40%;
+    left: -100vw;
+    top: 160vh;
+    background-image: linear-gradient(to bottom, #0d7bba, #0e87cc);
+}
+
+#bwaveoverlay {
+    position: fixed;
+    width: 100%;
+    height: 40%;
+    left: -100vw;
+    top: 160vh;
+    background-color: #0d7bba;
+    opacity: 50%;
+}
+
+#sun {
+    position:fixed;
+    transform: scale(.5);
+    left: -20vw;
+    top: 135vh;
+}
+
+#moon {
+    position:fixed;
+    transform: scale(.3);
+    left: -20vw;
+    top: 135vh;
+}
+
+#shard1 {
+    position: fixed;
+    left: -65vw;
+    top: 160vh;
+    opacity: 0;
+}
+
+#shard2 {
+    position: fixed;
+    left: -62vw;
+    top: 165vh;
+    opacity: 0;
+}
+
+#shard3 {
+    position: fixed;
+    left: -67vw;
+    top: 168vh;
+    opacity: 0;
+}
+
+#shard4 {
+    position: fixed;
+    left: -70vw;
+    top: 157vh;
+    opacity: 0;
+}
+
+#shard5 {
+    position: fixed;
+    left: -57vw;
+    top: 162vh;
+    opacity: 0;
+}
+
+#shard6 {
+    position: fixed;
+    left: -68vw;
+    top: 154vh;
+    opacity: 0;
+}
+
+#shard7 {
+    position: fixed;
+    left: -60vw;
+    top: 158vh;
+    opacity: 0;
+}
+
+#shard8 {
+    position: fixed;
+    left: -47vw;
+    top: 150vh;
+    opacity: 0;
+}
+
+#shard9 {
+    position: fixed;
+    left: -60vw;
+    top: 164vh;
+    opacity: 0;
+}
+
+#shard10 {
+    position: fixed;
+    left: -49vw;
+    top: 148vh;
+    opacity: 0;
+}
+
+#shard11 {
+    position: fixed;
+    left: -52vw;
+    top: 158vh;
+    opacity: 0;
+}
+
+#shard12 {
+    position: fixed;
+    left: -60vw;
+    top: 161vh;
+    opacity: 0;
+}
+
+#shard13 {
+    position: fixed;
+    left: -69vw;
+    top: 161vh;
+    opacity: 0;
+}
+
+#shard14 {
+    position: fixed;
+    left: -56vw;
+    top: 160vh;
+    opacity: 0;
+}
+
+#shard15 {
+    position: fixed;
+    left: -63vw;
+    top: 160vh;
+    opacity: 0;
+}
+
+#shard16 {
+    position: fixed;
+    left: -50vw;
+    top: 160vh;
+    opacity: 0;
+}
+
+#shard17 {
+    position: fixed;
+    left: -52vw;
+    top: 157vh;
+    transform: rotate(55deg);
+    opacity: 0;
+}
+
+#shard18 {
+    position: fixed;
+    left: -51vw;
+    top: 164vh;
+    opacity: 0;
+}
+
+#shard19 {
+    position: fixed;
+    left: -47vw;
+    top: 160vh;
+    opacity: 0;
+}
+
+#shard20 {
+    position: fixed;
+    left: -49vw;
+    top: 160vh;
+    transform: rotate(-15deg);
+    opacity: 0;
+}
+
+#bottle {
+    position: fixed;
+    transform: scale(.6);
+    left: -86vw;
+    top: 100vh;
+}
+
+#titlecardbox2 {
+    position: fixed;
+    width: 45vw;
+    height: 14%;
+    top: 21vh;
+    left: 2vw;
+    background-image: radial-gradient(#fffac8, #fffbdc);
+    opacity: 0;
+}
+
+#titlecardshadow2 {
+    position: fixed;
+    width: 45vw;
+    height: 14%;
+    top: 23vh;
+    left: 3vw;
+    background-color: #463437;
+    opacity: 0;
+}
+
+#tbottle {
+    font-family: Might;
+    position: fixed;
+    top: 18vh;
+    left: 3vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#tbottle2 {
+    font-family: Might;
+    position: fixed;
+    top: 22vh;
+    left: 3vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#tbottle3 {
+    font-family: Might;
+    position: fixed;
+    top: 26vh;
+    left: 3vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#zoom {
+    position: fixed;
+    transform: scale(.7);
+    left: -44vw;
+    top: 120vh;
+    opacity: 0;
+}
+
+#microl {
+    position: fixed;
+    transform: scale(0.3);
+    left: -41vw;
+    top: 120vh;
+    opacity: 0;
+}
+
+#micror {
+    position: fixed;
+    transform: scale(0.3);
+    left: -35vw;
+    top: 133vh;
+    opacity: 0;
+}
+
+#leftborder3 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: 100vh;
+    left: -101vw;
+    background-color: black;
+}
+
+#rightborder3 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: 100vh;
+    left: -2vw;
+    background-color: black;
+}
+
+#topborder3 {
+    position: fixed;
+    width:100%;
+    height: 2%;
+    top: 100vh;
+    left: -100vw;
+    background-color: black;
+}
+
+#start3 {
+    position:fixed;
+    top: 300vh;
+    width: 100px; 
+    height: 50px;
+    background-color: yellow;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+#start4 {
+    position:fixed;
+    top: 400vh;
+    width: 100px; 
+    height: 50px;
+    background-color: grey;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+#start5 {
+    position:fixed;
+    top: 500vh;
+    width: 100px; 
+    height: 50px;
+    background-color: purple;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+/* panel4/frame 4 specific elements */
+
+.panel4 {
+    top: 600vh;
+    height: 500vh;
+    width: 100vw;
+}
+
+#titlecardbox3 {
+    position: fixed;
+    width: 22vw;
+    height: 8vh;
+    top: 133vh;
+    left: 25vw;
+    background-image: radial-gradient(#fffac8, #fffbdc);
+    opacity: 1;
+}
+
+#titlecardshadow3 {
+    position: fixed;
+    width: 22vw;
+    height: 8vh;
+    top: 134vh;
+    left: 25.5vw;
+    background-color: #463437;
+    opacity: 1;
+}
+
+#titlecardbox4 {
+    position: fixed;
+    width: 22vw;
+    height: 8vh;
+    top: 147.5vh;
+    left: 56vw;
+    background-image: radial-gradient(#fffac8, #fffbdc);
+    opacity: 1;
+}
+
+#titlecardshadow4 {
+    position: fixed;
+    width: 22vw;
+    height: 8vh;
+    top: 148.5vh;
+    left: 56.5vw;
+    background-color: #463437;
+    opacity: 1;
+}
+
+#titlecardbox5 {
+    position: fixed;
+    width: 14vw;
+    height: 8vh;
+    top: 163vh;
+    left: 33vw;
+    background-image: radial-gradient(#fffac8, #fffbdc);
+    opacity: 1;
+}
+
+#titlecardshadow5 {
+    position: fixed;
+    width: 14vw;
+    height: 8vh;
+    top: 164vh;
+    left: 33.5vw;
+    background-color: #463437;
+    opacity: 1;
+}
+
+#fallingtext {
+    font-family: Might;
+    position: fixed;
+    top: 130vh;
+    left: 26vw;
+    font-size: 25pt;
+    opacity: 1;
+}
+
+#fallingtext2 {
+    font-family: Might;
+    position: fixed;
+    top: 144.5vh;
+    left: 57vw;
+    font-size: 25pt;
+    opacity: 1;
+}
+
+#fallingtext3 {
+    font-family: Might;
+    position: fixed;
+    top: 160vh;
+    left: 34vw;
+    font-size: 25pt;
+    opacity: 1;
+}
+
+#start6 {
+    position:fixed;
+    top: 600vh;
+    width: 100px; 
+    height: 50px;
+    background-color: orange;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+/* panel4.5/frame 4 specific elements */
+
+.panel4half {
+    top: 1100vh;
+    height: 200vh;
+    width: 100vw;
+}
+
+#seafloor {
+    position: fixed;
+    left: -15vw;
+    top: 67%;
+    transform: scale(.8);
+}
+
+#frontisopod {
+    position: fixed;
+    top: 4vh;
+    left: 13vw;
+    transform: scale(0.01);
+    opacity: 0;
+}
+
+#frontisopodoutstretch {
+    position:fixed;
+    top: 4vh;
+    left: 13vw;
+    opacity: 0;
+}
+
+#frontisopodconsume {
+    position:fixed;
+    top: 4vh;
+    left: 13vw;
+    opacity: 0;
+}
+
+#titlecardbox6 {
+    position: fixed;
+    width: 55vw;
+    height: 8vh;
+    top: 5vh;
+    left: 23vw;
+    background-image: radial-gradient(#fffac8, #fffbdc);
+    opacity: 0;
+}
+
+#titlecardshadow6 {
+    position: fixed;
+    width: 55vw;
+    height: 8vh;
+    top: 6vh;
+    left: 23.5vw;
+    background-color: #463437;
+    opacity: 0;
+}
+
+#feasttext {
+    font-family: Might;
+    position: fixed;
+    top: 2vh;
+    left: 24vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#feasttext2 {
+    font-family: Might;
+    position: fixed;
+    top: 2vh;
+    left: 24vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#start7 {
+    position:fixed;
+    top: 700vh;
+    width: 100px; 
+    height: 50px;
+    background-color: pink;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+/* panel 5 specific elements */
+
+.panel5{
+    top: 1100vh;
+    height: 1500vh;
+    width: 100vw;
+}
+
+#leftborder4 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: 0vh;
+    left: 100vw;
+    background-color: black;
+}
+
+#rightborder4 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: 0vh;
+    left: 199vw;
+    background-color: black;
+}
+
+#ocean2 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #031119;
+    top:0vh;
+    left:100vw;
+}
+
+#backisopod {
+    position: fixed;
+    top: -10vh;
+    left: 133vw;
+    transform: scale(.3);
+}
+
+#titlecardbox7 {
+    position: fixed;
+    width: 48.5vw;
+    height: 8vh;
+    top: -87vh;
+    left: 2vw;
+    background-image: radial-gradient(#fffac8, #fffbdc);
+    opacity: 1;
+}
+
+#titlecardshadow7 {
+    position: fixed;
+    width: 48.5vw;
+    height: 8vh;
+    top: -86vh;
+    left: 2.5vw;
+    background-color: #463437;
+    opacity: 1;
+}
+
+#upwardtext{
+    font-family: Might;
+    position: fixed;
+    top: -90vh;
+    left: 3vw;
+    font-size: 25pt;
+    opacity: 1;
+}
+
+#zoomcells{
+    position: fixed;
+    top: 27vh;
+    left: 47vw;
+    transform: scale(.6);
+    opacity: 0;
+}
+
+#cell{
+    position: fixed;
+    top: 23vh;
+    left: 52.5vw;
+    transform: scale(.05);
+    opacity: 0;
+}
+
+#cell2{
+    position: fixed;
+    top: 13vh;
+    left: 51.5vw;
+    transform: scale(.05) rotate(156deg);
+    opacity: 0;
+}
+
+#cell3{
+    position: fixed;
+    top: 17vh;
+    left: 56.5vw;
+    transform: scale(.05) rotate(30deg);
+    opacity: 0;
+}
+
+#titlecardbox8 {
+    position: fixed;
+    width: 35vw;
+    height: 11vh;
+    top: -27vh;
+    left: 62vw;
+    background-image: radial-gradient(#fffac8, #fffbdc);
+    opacity: 1;
+}
+
+#titlecardshadow8 {
+    position: fixed;
+    width: 35vw;
+    height: 11vh;
+    top: -26vh;
+    left: 62.5vw;
+    background-color: #463437;
+    opacity: 1;
+}
+
+#upwardtext2{
+    font-family: Might;
+    position: fixed;
+    top: -30vh;
+    left: 63vw;
+    font-size: 25pt;
+    opacity: 1;
+}
+
+#upwardtext3{
+    font-family: Might;
+    position: fixed;
+    top: -26vh;
+    left: 63vw;
+    font-size: 25pt;
+    opacity: 1;
+}
+
+#bottomtrash {
+    position: fixed;
+    top:-50vh;
+    left:0vw;
+}
+#start8 {
+    position:fixed;
+    top: 800vh;
+    width: 100px; 
+    height: 50px;
+    background-color: brown;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+#start9 {
+    position:fixed;
+    top: 900vh;
+    width: 100px; 
+    height: 50px;
+    background-color: beige;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+/* panel 6 specific elements */
+
+#topborder5 {
+    position: fixed;
+    width: 100%;
+    height: 3%;
+    top: -50.5vh;
+    left: 0;
+    background-color: black;
+}
+
+#emergesky {
+    position: fixed;
+    top: -116vh;
+    left: 0vw;
+    transform: scaley(1.2);
+}
+
+#emergewater  {
+    position: fixed;
+    width: 100%;
+    height: 55%;
+    top: -55vh;
+    left: 0vw;
+    background-image: linear-gradient(to bottom, #0067cc, #0d7bba);
+}
+
+#emergeisopodwtrash {
+    position: fixed;
+    top: 105vh;
+    left: 5vw;
+    opacity: 1;
+}
+
+#emergeisopodwotrash {
+    position: fixed;
+    top: 23.9vh;
+    left: 27.6vw;
+    opacity: 0;
+    transform: rotate(0deg);
+}
+
+#emergetrash{
+    position:fixed;
+    top: -65vh;
+    left:-15vw;
+    transform: scalex(.77);
+}
+
+#emergetrash2{
+    position:fixed;
+    top: -55vh;
+    left:-65vw;
+    transform: scale(.15);
+}
+
+#emergetrash3{
+    position:fixed;
+    top: -45vh;
+    left: 35vw;
+    transform: scalex(.35) scaley(.4);
+}
+
+#emergetrash4{
+    position:fixed;
+    top: -55vh;
+    left: 0vw;
+    transform: scalex(.325) scaley(.35);
+}
+
+#emergetrash5{
+    position:fixed;
+    top: -65vh;
+    left: -30vw;
+    transform: scalex(.24) scaley(.22);
+}
+
+#emergetrash6{
+    position:fixed;
+    top: -75vh;
+    left: -5vw;
+    transform: scalex(.1) scaley(.1);
+}
+
+#emergetrash7{
+    position:fixed;
+    top: 35vh;
+    left: -80vw;
+    transform: scalex(.1) scaley(.1);
+}
+
+
+#towboatside {
+    position: fixed; 
+    top: 3vh;
+    left: -90vw;
+    transform: scale(.02);
+}
+
+#towboatcargo {
+    position: fixed;
+    top: 30.3vh;
+    left: -81.4vw;
+    transform: scale(.105);
+    opacity: 1;
+}
+
+#cargo {
+    position: fixed;
+    top: 15vh;
+    left: -47.9vw;
+    transform: scale(.08);
+    opacity: 1;
+}
+
+#cargo2 {
+    position: fixed;
+    top: 15vh;
+    left: -45.9vw;
+    transform: scale(.08);
+    opacity: 1; 
+}
+
+#cargo3 {
+    position: fixed;
+    top: 15vh;
+    left: -40.9vw;
+    transform: scale(.08);
+    opacity: 1;
+}
+
+#cargo4 {
+    position: fixed;
+    top: 15vh;
+    left: -43.5vw;
+    transform: scale(.08);
+    opacity: 1;
+}
+
+#foghorn {
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    font-family: Them;
+    font-size: 35px;
+    transform: rotate(-15deg);
+    opacity: 0;
+}
+
+#foghorn2 {
+    position: fixed;
+    top: 15vh;
+    left: 5vw;
+    font-family: Them;
+    font-size: 35px;
+    opacity: 0;
+}
+
+#foghorn3 {
+    position: fixed;
+    top: 25vh;
+    left: 5vw;
+    font-family: Them;
+    font-size: 35px;
+    transform: rotate(15deg);
+    opacity: 0;
+}
+
+
+#leftborder5 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: -100vh;
+    left: -1vw;
+    background-color: black;
+}
+
+#rightborder5 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: -100vh;
+    left: 98vw;
+    background-color: black;
+}
+
+#inbetween5-6 {
+    position: fixed;
+    top:-28vh;
+    left:0;
+    width: 100vw;
+    height: 28vh;
+    background-color: white;
+}
+
+#initalboattext{
+    font-family: Might;
+    position: fixed;
+    top: 10vh;
+    left: 55vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#titlecardbox9 {
+    position: fixed;
+    width: 40vw;
+    height: 8vh;
+    top: 12.5vh;
+    left: 54vw;
+    background-image: radial-gradient(#fffac8, #fffbdc);
+    opacity: 0;
+}
+
+#titlecardshadow9 {
+    position: fixed;
+    width: 40vw;
+    height: 8vh;
+    top: 13.5vh;
+    left: 54.5vw;
+    background-color: #463437;
+    opacity: 0;
+}
+
+#bottomborder5 {
+    position: fixed;
+    width: 100vw;
+    height: 2vh;
+    top: -29vh;
+    left: 0;
+    background-color: black; 
+}
+
+#topborder6 {
+    position: fixed;
+    width: 100vw;
+    height: 2vh;
+    top: -100vh;
+    left: 0;
+    background-color: black; 
+}
+
+#start10 {
+    position: fixed;
+    top: 1000vh;
+    width: 100px;
+    height: 50px;
+    background-color: magenta;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+#start11 {
+    position: fixed;
+    top: 1100vh;
+    width: 100px;
+    height: 50px;
+    background-color: Salmon;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+/* panel 7 specific elements */
+
+#isopodside {
+    position: fixed;
+    top: 59vh;
+    left: 100vw;
+    transform: scale(.8);
+}
+
+#chasesky {
+    position: fixed;
+    left: 0;
+    top: 55vh;
+    width: 100%;
+    height: 150%;
+    background-image: linear-gradient(to bottom, #00bfff, #00b2E2);
+    opacity: 0;
+}
+
+#boatoceanoverlay {
+    position: fixed;
+    left: 0;
+    top: 119vh;
+    width: 100%;
+    height: 50%;
+    background-color: #0e87cc;
+    opacity: 36%;
+}
+
+#thehills {
+    position: fixed;
+    left: -250vw;
+    scale: .45;
+    top: -38vh;
+}
+
+#cityscape {
+    position: fixed;
+    left: -500vw;
+    top: 0vh;
+    scale: .82;
+}
+
+#goldengate {
+    position: fixed;
+    top: -10vh;
+    left: -203vw;
+    scale: .95;
+}
+
+#docks {
+    position: fixed;
+    top: -1.5vh;
+    left: -125vw;
+    scale: 0.8;
+}
+
+#traveltext {
+    font-family: Might;
+    position: fixed;
+    top: 10vh;
+    left: -30vw;
+    font-size: 25pt;
+}
+
+#titlecardbox10 {
+    position: fixed;
+    width: 22vw;
+    height: 8vh;
+    top: 12.5vh;
+    left: -31vw;
+    background-image: radial-gradient(#fffac8, #fffbdc);
+    opacity: 1;
+}
+
+#titlecardshadow10 {
+    position: fixed;
+    width: 22vw;
+    height: 8vh;
+    top: 13.5vh;
+    left: -31.5vw;
+    background-color: #463437;
+    opacity: 1;
+}
+
+#start12 {
+    position: fixed;
+    top: 1200vh;
+    width: 100px;
+    height: 50px;
+    background-color: snow;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+#start13 {
+    position: fixed;
+    top: 1300vh;
+    width: 100px;
+    height: 50px;
+    background-color: tomato;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+#start14 {
+    position: fixed;
+    top: 1400vh;
+    width: 100px;
+    height: 50px;
+    background-color: azure;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+/* panel 8 specific elements */
+
+#inbetween7-8 {
+    position: fixed;
+    width: 100vw;
+    height: 50vh;
+    top: -50vh;
+    left: 0;
+    background-color: white;
+}
+
+#closeupsky {
+    position: fixed;
+    width: 100vw;
+    height: 50vh;
+    top: -140vh;
+    left: 0;
+    background-image: linear-gradient(to bottom, #00bfff, #00b2E2);
+    opacity: 1;
+}
+
+#splash {
+    position: fixed;
+    top: 100vh;
+    left: 15vw;
+    opacity: 1;
+}
+
+#closeupwater {
+    position: fixed;
+    width: 100vw;
+    height: 50vh;
+    top: -90vh;
+    left: 0;
+    background-image: linear-gradient(to bottom, #0067cc, #0d7bba);
+    opacity: 1;
+}
+
+#hunchedisopod {
+    position: fixed;
+    top: 89.5vh;
+    left: -12vw;
+    scale: .8;
+}
+
+#frontfacingwave {
+    position: fixed;
+    top: -23vh;
+    left: 2vw;
+    transform: scaley(.01) scalex(1.6);
+    transform-origin: center bottom;
+    opacity: 1;
+    z-index: 0;
+}
+
+#frontviewboat {
+    position: fixed;
+    top: 8vh;
+    left: 33vw;
+    scale: .01;
+    opacity: 0;
+}
+
+#bottomborder6 {
+    position: fixed;
+    width: 100%;
+    height: 2%;
+    top: -40vh;
+    left: 0;
+    background-color: black;
+}
+
+#topborder7 {
+    position: fixed;
+    width: 100%;
+    height: 2%;
+    top: -140vh;
+    left: 0;
+    background-color: black;
+}
+
+#leftborder7 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: -140vh;
+    left: 99%;
+    background-color: black;
+}
+
+#rightborder7 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: -140vh;
+    left: -1%;
+    background-color: black;
+}
+
+#dockbackdrop {
+    position: fixed;
+    top: -12vh;
+    left: -13.25vw;
+    transform: scale(.8);
+    opacity: 0;
+}
+
+#man1 {
+    position: fixed;
+    top: 65vh;
+    left: 25vw;
+    transform: scale(.65);
+    opacity: 0;
+}
+
+#man2 {
+    position: fixed;
+    top: 50vh;
+    left: 60vw;
+    transform: scale(.75);
+    opacity: 0;
+}
+
+#sidewave {
+    position: fixed;
+    top: 10vh;
+    left: -135vw;
+}
+ 
+#titlecardbox11 {
+    position: fixed;
+    width: 35vw;
+    height: 10vh;
+    top: 18.5vh;
+    left: 4vw;
+    background-image: radial-gradient(#fffac8, #fffbdc);
+    opacity: 0;
+}
+
+#titlecardshadow11 {
+    position: fixed;
+    width: 35vw;
+    height: 10vh;
+    top: 19.5vh;
+    left: 4.5vw;
+    background-color: #463437;
+    opacity: 0;
+}
+
+#wavetext {
+    font-family: Might;
+    position: fixed;
+    top: 15vh;
+    left: 5vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#wavetext2 {
+    font-family: Might;
+    position: fixed;
+    top: 19vh;
+    left: 5vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#start15 {
+    position: fixed;
+    top: 1500vh;
+    width: 100px;
+    height: 50px;
+    background-color: blanchedalmond;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+#start16 {
+    position: fixed;
+    top: 1600vh;
+    width: 100px;
+    height: 50px;
+    background-color: chocolate;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+#start17 {
+    position: fixed;
+    top: 1700vh;
+    width: 100px;
+    height: 50px;
+    background-color: darkgoldenrod;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+/* Panel 9 specific elements */
+
+#start18 {
+    position: fixed;
+    top: 1800vh;
+    width: 100px;
+    height: 50px;
+    background-color: floralwhite;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+#prospectivecrates {
+    position: fixed;
+    top: -125vh;
+    left: -14.5vw;
+    transform: scale(.8);
+    opacity: 1;
+}
+
+#citysky {
+    position: fixed;
+    left: 0vw;
+    top: 0vh;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #00bfff, #00b2E2);
+    opacity: 0;
+}
+
+#streetview {
+    position: fixed;
+    top: -12vh;
+    left: -15vw;
+    transform: scale(.8);
+    opacity: 0;
+}
+
+#building {
+    position: fixed;
+    top: -75vh;
+    left: 22.5vw;
+    transform: scale(.2);
+    opacity: 0;
+}
+
+#building2 {
+    position: fixed;
+    top: -90vh;
+    left: 38vw;
+    transform: scale(.2);
+    opacity: 0;
+}
+
+#bbuilding1 {
+    position: fixed;
+    top: -85vh;
+    left: 32.5vw;
+    transform: scale(.2);
+    opacity: 0;
+}
+
+#bbuilding2 {
+    position: fixed;
+    top: -56.5vh;
+    left: 37vw;
+    transform: scale(.25);
+    opacity: 0;
+}
+
+#backball {
+    position: fixed; 
+    top: 12vh;
+    left: 25vw;
+    transform: scale(0.01);
+    opacity: 0;
+}
+
+#frontball {
+    position: fixed; 
+    top: 12vh;
+    left: 25vw;
+    transform: scale(0.01);
+    opacity: 0;
+}
+
+#curltext {
+    font-family: Might;
+    position: fixed;
+    top: 80vh;
+    left: 23vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#curltext2 {
+    font-family: Might;
+    position: fixed;
+    top: 84vh;
+    left: 23vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#titlecardbox12 {
+    position: fixed;
+    width: 56vw;
+    height: 11vh;
+    top: 83vh;
+    left: 22vw;
+    background-image: radial-gradient(#fffac8, #fffbdc);
+    opacity: 0;
+}
+
+#titlecardshadow12 {
+    position: fixed;
+    width: 56vw;
+    height: 11vh;
+    top: 84vh;
+    left: 22.5vw;
+    background-color: #463437;
+    opacity: 0;
+}
+
+#titlecardbox13 {
+    position: fixed;
+    width: 36.5vw;
+    height: 9.5vh;
+    top: 46.5vh;
+    left: 33vw;
+    background-image: radial-gradient(#fffac8, #fffbdc);
+    opacity: 0;
+}
+
+#titlecardshadow13 {
+    position: fixed;
+    width: 36.5vw;
+    height: 9.5vh;
+    top: 47.5vh;
+    left: 33.5vw;
+    background-color: #463437;
+    opacity: 0;
+}
+
+#smallsmokecloud {
+    position: fixed;
+    left: 30vw;
+    top: 35vh;
+    opacity: 0;
+    transform: scale(.0001);
+}
+
+#smokecloud {
+    position: fixed;
+    left: 28vw;
+    top: -5vh;
+    opacity: 0;
+    transform: scale(.1);
+}
+
+#tagline {
+    font-family: Might;
+    position: fixed;
+    top: 45vh;
+    left: 34vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#bottomborder7 {
+    position: fixed;
+    width: 100%;
+    height: 2%;
+    top: -12vh;
+    left: 0;
+    background-color: black;
+}
+
+#topborder8 {
+    position: fixed;
+    width: 100%;
+    height: 2%;
+    top: -110vh;
+    left: 0;
+    background-color: black;
+}
+
+#leftborder8 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: -110vh;
+    left: 99%;
+    background-color: black;
+}
+
+#rightborder8 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: -110vh;
+    left: -1%;
+    background-color: black;
+}
+
+#start19 {
+    position: fixed;
+    top: 1900vh;
+    width: 100px;
+    height: 50px;
+    background-color: ghostwhite;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+/* Panel 10 specific elements */
+
+#insidebackground {
+    position: fixed;
+    top: -13vh;
+    left: -14vw;
+    transform: scale(.8);
+    opacity: 0;
+}
+
+#bottomisopod {
+    position: fixed;
+    top: -25vh;
+    left: -200vw;
+    opacity: 0;
+}
+
+#glasspane {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-color: #5d84a5;
+    opacity: 0;
+}
+
+#insideskyscraper {
+    position: fixed;
+    top: -60vh;
+    left: -21vw;
+    transform: scale(.8);
+    opacity: 0;
+}
+
+#windowbars {
+    position: fixed;
+    top: -13vh;
+    left: -14vw;
+    transform: scale(.8);
+    opacity: 0;
+}
+
+#start20 {
+    position: fixed;
+    top: 2000vh;
+    width: 100px;
+    height: 50px;
+    background-color: honeydew;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+/* Panel 11 Specific Elements */
+
+#salesforce {
+    position: fixed;
+    left: 98vw;
+    top: -11vh;
+    transform: scale(.8);
+}
+
+#bottomborder8 {
+    position: fixed;
+    width: 100%;
+    height: 2%;
+    top: 98vh;
+    left: 110vw;
+    background-color: black;
+}
+
+#topborder9 {
+    position: fixed;
+    width: 100%;
+    height: 2%;
+    top: 0vh;
+    left: 110vw;
+    background-color: black;
+}
+
+#leftborder9 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: 0vh;
+    left: 109vw;
+    background-color: black;
+}
+
+#rightborder9 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: 0vh;
+    left: 208vw;
+    background-color: black;
+}
+
+#chopper {
+    position: fixed;
+    left: -54vw;
+    top: 100vh;
+}
+
+#chopper2 {
+    position: fixed;
+    left: 90vw;
+    top: 55vh;
+    transform: scale(-.2, .2);
+}
+
+#rocket {
+    position: fixed;
+    left: 20vw;
+    top: 57vh;
+    transform: scale(.5);
+    opacity: 0;
+}
+
+#rocket2 {
+    position: fixed;
+    left: 76vw;
+    top: 37vh;
+    transform: scale(-.15, .15) rotate(35deg);
+    opacity: 0;
+}
+
+#rocketsmoke {
+    position: fixed;
+    left: 34vw;
+    top: 24vh;
+    transform: scale(.175);
+    opacity: 0;
+}
+
+#rocketsmoke2 {
+    position: fixed;
+    left: 25vw;
+    top: 27vh;
+    transform: scale(.1);
+    opacity: 0;
+}
+
+#titlecardbox14 {
+    position: fixed;
+    width: 42vw;
+    height: 14.5vh;
+    top: 10vh;
+    left: 1.5vw;
+    background-image: radial-gradient(#fffac8, #fffbdc);
+    opacity: 0;
+}
+
+#titlecardshadow14 {
+    position: fixed;
+    width: 42vw;
+    height: 14.5vh;
+    top: 11vh;
+    left: 2vw;
+    background-color: #463437;
+    opacity: 0;
+}
+
+#titlecardbox15 {
+    position: fixed;
+    width: 49.5vw;
+    height: 11.5vh;
+    top: 78vh;
+    left: 44vw;
+    background-image: radial-gradient(#fffac8, #fffbdc);
+    opacity: 0;
+}
+
+#titlecardshadow15 {
+    position: fixed;
+    width: 49.5vw;
+    height: 11.5vh;
+    top: 79vh;
+    left: 44.5vw;
+    background-color: #463437;
+    opacity: 0;
+}
+
+#choppertext {
+    font-family: Might;
+    position: fixed;
+    top: 7vh;
+    left: 3vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#choppertext2 {
+    font-family: Might;
+    position: fixed;
+    top: 11vh;
+    left: 3vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#choppertext3 {
+    font-family: Might;
+    position: fixed;
+    top: 15vh;
+    left: 3vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#choppertext4 {
+    font-family: Might;
+    position: fixed;
+    top: 76vh;
+    left: 45vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#choppertext5 {
+    font-family: Might;
+    position: fixed;
+    top: 80vh;
+    left: 45vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#start21 {
+    position: fixed;
+    top: 2100vh;
+    width: 100px;
+    height: 50px;
+    background-color: indianred;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+#start22 {
+    position: fixed;
+    top: 2200vh;
+    width: 100px;
+    height: 50px;
+    background-color: khaki;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+/* Panel 12 specific elements */
+
+#bottomborder9 {
+    position: fixed;
+    width: 100%;
+    height: 2%;
+    top: 208vh;
+    left: 0vw;
+    background-color: black;
+}
+
+#topborder10 {
+    position: fixed;
+    width: 100%;
+    height: 2%;
+    top: 110vh;
+    left: 0vw;
+    background-color: black;
+}
+
+#leftborder10 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: 110vh;
+    left: -1vw;
+    background-color: black;
+}
+
+#rightborder10 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: 110vh;
+    left: 98vw;
+    background-color: black;
+}
+
+#rooftops{
+    position: fixed;
+    left: -15vw;
+    top: 98vh;
+    transform: scale(.8);
+}
+
+#spearsmoke {
+    position: fixed;
+    top: 120vh;
+    left: 25vw;
+    transform: scale(3);
+}
+
+#transamerican {
+    position: fixed;
+    top: 110vh;
+    left: 40vw;
+    transform: scale(.8);
+    opacity: 1;
+}
+
+#spearedisopod {
+    position: fixed;
+    top: -65vh;
+    left: 54vw;
+    opacity: 1;
+}
+
+#trashfalls {
+    position: fixed;
+    top: 25vh;
+    left: 45vw;
+    transform: scale(.6);
+    opacity: 0;
+}
+
+#backshell {
+    position: fixed;
+    top: -75.5vh;
+    left: 56.5vw;
+    opacity: 1;
+}
+
+#titlecardbox16 {
+    position: fixed;
+    width: 40vw;
+    height: 11.5vh;
+    top: 12.5vh;
+    left: 1.25vw;
+    background-image: radial-gradient(#fffac8, #fffbdc);
+    opacity: 0;
+}
+
+#titlecardshadow16 {
+    position: fixed;
+    width: 40vw;
+    height: 11.5vh;
+    top: 13.5vh;
+    left: 1.75vw;
+    background-color: #463437;
+    opacity: 0;
+}
+
+#speartext {
+    font-family: Might;
+    position: fixed;
+    top: 10vh;
+    left: 2vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#speartext2 {
+    font-family: Might;
+    position: fixed;
+    top: 14vh;
+    left: 2vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#speartext3 {
+    font-family: Might;
+    position: fixed;
+    top: 10vh;
+    left: 2vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#speartext4 {
+    font-family: Might;
+    position: fixed;
+    top: 14vh;
+    left: 2vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#start23 {
+    position: fixed;
+    top: 2300vh;
+    width: 100px;
+    height: 50px;
+    background-color: lawngreen;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+#start24 {
+    position: fixed;
+    top: 2400vh;
+    width: 100px;
+    height: 50px;
+    background-color: mediumspringgreen;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+/* Panel 13 specific elements */
+
+#finalsky {
+    position: fixed;
+    left: 0vw;
+    top: 110vh;
+    width: 100%;
+    height: 300%;
+    background-image: linear-gradient(to bottom, #00bfff, #00b2E2);
+    opacity: 1; 
+}
+
+#finalbottle {
+    position: fixed;
+    left: 15vw;
+    top: 110vh;
+    transform: scale(.6);
+}
+
+#finalbuilding {
+    position: fixed;
+    left: 0vw;
+    top: 410vh;
+    transform: scale(3);
+}
+
+#bottomborder10 {
+    position: fixed;
+    width: 100%;
+    height: 2%;
+    top: 208vh;
+    left: 0vw;
+    background-color: black;
+}
+
+#topborder11 {
+    position: fixed;
+    width: 100%;
+    height: 2%;
+    top: 110vh;
+    left: 0vw;
+    background-color: black;
+}
+
+#leftborder11 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: 110vh;
+    left: -1vw;
+    background-color: black;
+}
+
+#rightborder11 {
+    position: fixed;
+    width: 2%;
+    height: 100%;
+    top: 110vh;
+    left: 98vw;
+    background-color: black;
+}
+
+#finalfade {
+    position: fixed;
+    top: 0vh;
+    left: 0vw;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+}
+
+#start25 {
+    position: fixed;
+    top: 2500vh;
+    width: 100px;
+    height: 50px;
+    background-color: navy;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
+#finaltext {
+    position:fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: fixed;
+    top: 23vh;
+    left: 15vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#finaltext2 {
+    position:fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: fixed;
+    top: 43vh;
+    left: 22vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#finaltext3 {
+    position:fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: fixed;
+    top: 63vh;
+    left: 30vw;
+    font-size: 25pt;
+    opacity: 0;
+}
+
+#start26 {
+    position: fixed;
+    top: 2600vh;
+    width: 100px;
+    height: 50px;
+    background-color: olive;
+    opacity: 0;
+    margin-left: 90vw;
+}
+
